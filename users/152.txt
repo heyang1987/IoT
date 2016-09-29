@@ -1,0 +1,14 @@
+152,g,g,continuous,c,c,no
+152,g,u,once,d,d,yes
+152,d,o,continuous,a,a,yes
+152,f,t,continuous,c,c,no
+152,e,s,once,b,b,yes
+152,c,c,continuous,f,d,no
+152,f,f,once,b,b,yes
+152,b,b,once,e,c,yes
+152,d,d,once,f,a,yes
+152,a,a,continuous,d,b,no
+152,c,q,once,f,a,no
+152,a,o,once,e,c,no
+152,e,e,continuous,a,a,no
+152,b,p,continuous,f,d,no

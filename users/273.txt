@@ -1,0 +1,14 @@
+273,g,z,once,f,b,no
+273,d,i,once,c,b,yes
+273,a,t,once,a,d,no
+273,b,g,once,a,d,no
+273,f,k,once,e,d,yes
+273,e,x,once,e,d,no
+273,f,y,continuous,f,a,no
+273,g,l,continuous,f,a,no
+273,b,u,continuous,b,a,no
+273,c,v,once,c,b,yes
+273,c,h,continuous,b,a,no
+273,d,w,continuous,d,c,yes
+273,a,f,continuous,f,d,no
+273,e,d,continuous,d,c,no

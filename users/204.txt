@@ -1,0 +1,14 @@
+204,a,o,continuous,f,b,no
+204,f,f,continuous,c,a,no
+204,c,q,continuous,a,c,no
+204,b,b,continuous,f,b,no
+204,e,e,once,b,d,no
+204,b,p,once,f,c,no
+204,g,g,once,d,b,no
+204,c,c,once,f,c,no
+204,f,t,once,d,b,no
+204,a,a,once,e,a,no
+204,e,s,continuous,c,a,no
+204,g,u,continuous,e,c,no
+204,d,d,continuous,a,c,yes
+204,d,o,once,b,d,yes

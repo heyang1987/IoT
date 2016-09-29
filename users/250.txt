@@ -1,0 +1,14 @@
+250,e,a,continuous,d,b,no
+250,c,p,once,c,c,no
+250,f,p,continuous,f,d,yes
+250,e,o,once,e,c,no
+250,g,c,continuous,f,d,no
+250,g,q,once,f,a,no
+250,d,zb,continuous,d,d,no
+250,b,l,once,a,a,no
+250,a,k,continuous,f,a,no
+250,b,z,continuous,b,b,yes
+250,d,n,once,c,c,yes
+250,a,y,once,a,a,no
+250,f,b,once,e,c,yes
+250,c,a,continuous,b,b,yes

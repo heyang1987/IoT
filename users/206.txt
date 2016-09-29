@@ -1,0 +1,14 @@
+206,a,d,once,c,d,no
+206,g,b,once,b,c,no
+206,f,o,once,b,c,no
+206,b,y,once,e,b,yes
+206,e,n,once,f,d,yes
+206,c,z,continuous,f,c,no
+206,d,p,once,f,d,yes
+206,e,zb,continuous,a,d,yes
+206,d,a,continuous,f,c,no
+206,a,x,continuous,d,a,no
+206,c,l,once,e,b,yes
+206,g,p,continuous,c,d,yes
+206,f,a,continuous,a,b,yes
+206,b,k,continuous,d,a,yes

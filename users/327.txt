@@ -1,0 +1,14 @@
+327,g,l,continuous,c,d,yes
+327,e,x,once,b,c,yes
+327,b,g,once,e,d,yes
+327,c,v,once,f,b,yes
+327,d,w,continuous,a,b,no
+327,f,k,once,b,c,no
+327,f,y,continuous,c,d,yes
+327,a,f,continuous,d,c,yes
+327,d,i,once,f,b,yes
+327,c,h,continuous,f,a,yes
+327,e,d,continuous,a,b,yes
+327,g,z,once,d,a,yes
+327,a,t,once,e,d,yes
+327,b,u,continuous,f,a,no

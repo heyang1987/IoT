@@ -1,0 +1,14 @@
+7,b,u,once,b,a,no
+7,d,w,once,d,c,yes
+7,e,x,continuous,e,d,no
+7,d,i,continuous,c,b,no
+7,b,g,continuous,a,d,no
+7,c,h,once,b,a,no
+7,e,d,once,d,c,no
+7,a,f,once,f,d,no
+7,g,l,once,f,a,no
+7,f,k,continuous,e,d,no
+7,f,y,once,f,a,no
+7,g,z,continuous,f,b,no
+7,a,t,continuous,a,d,no
+7,c,v,continuous,c,b,no

@@ -1,0 +1,14 @@
+341,g,c,once,a,a,yes
+341,g,q,continuous,b,b,no
+341,f,p,once,a,a,yes
+341,e,o,continuous,f,a,yes
+341,f,b,continuous,f,a,yes
+341,d,n,continuous,e,a,yes
+341,c,a,once,d,d,yes
+341,a,y,continuous,c,c,no
+341,d,zb,once,f,b,yes
+341,e,a,once,f,d,yes
+341,c,p,continuous,e,a,yes
+341,b,l,continuous,c,c,yes
+341,a,k,once,b,b,yes
+341,b,z,once,d,d,yes

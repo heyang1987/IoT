@@ -1,0 +1,14 @@
+195,d,s,once,f,d,yes
+195,e,t,continuous,a,d,no
+195,g,v,continuous,c,b,no
+195,c,d,once,e,b,yes
+195,b,c,continuous,d,a,no
+195,f,g,continuous,a,d,no
+195,g,h,once,b,a,no
+195,c,o,continuous,f,c,no
+195,a,p,continuous,d,a,no
+195,b,q,once,e,b,yes
+195,e,f,once,f,d,no
+195,a,b,once,c,d,no
+195,d,e,continuous,f,c,no
+195,f,u,once,b,a,no

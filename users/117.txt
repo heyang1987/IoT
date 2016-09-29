@@ -1,0 +1,14 @@
+117,a,t,continuous,b,c,no
+117,c,h,once,c,d,yes
+117,b,g,continuous,b,c,no
+117,c,v,continuous,d,a,no
+117,e,x,continuous,f,c,yes
+117,f,k,continuous,f,c,no
+117,d,i,continuous,d,a,no
+117,g,l,once,f,d,yes
+117,d,w,once,e,b,yes
+117,e,d,once,e,b,no
+117,b,u,once,c,d,yes
+117,f,y,once,f,d,yes
+117,g,z,continuous,a,d,yes
+117,a,f,once,a,b,no

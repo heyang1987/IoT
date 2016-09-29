@@ -1,0 +1,14 @@
+233,a,f,continuous,e,b,no
+233,e,x,once,c,b,no
+233,b,u,continuous,f,d,no
+233,g,z,once,e,d,no
+233,b,g,once,f,c,no
+233,c,h,continuous,f,d,no
+233,f,k,once,c,b,no
+233,g,l,continuous,d,c,no
+233,a,t,once,f,c,no
+233,d,i,once,a,d,yes
+233,c,v,once,a,d,no
+233,d,w,continuous,b,a,no
+233,f,y,continuous,d,c,yes
+233,e,d,continuous,b,a,no

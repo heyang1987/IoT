@@ -1,0 +1,14 @@
+143,a,y,continuous,f,d,yes
+143,c,a,once,f,a,yes
+143,c,p,continuous,a,a,yes
+143,b,z,once,f,a,yes
+143,b,l,continuous,f,d,no
+143,d,n,continuous,a,a,yes
+143,g,c,once,d,b,yes
+143,a,k,once,e,c,yes
+143,e,o,continuous,c,a,no
+143,e,a,once,b,d,yes
+143,f,p,once,d,b,yes
+143,d,zb,once,b,b,no
+143,f,b,continuous,c,a,yes
+143,g,q,continuous,e,c,yes

@@ -1,0 +1,14 @@
+128,d,n,once,f,c,yes
+128,g,c,continuous,c,c,no
+128,b,l,once,e,a,no
+128,g,q,once,d,d,yes
+128,c,p,once,f,c,yes
+128,f,b,once,b,b,no
+128,c,a,continuous,f,b,no
+128,d,zb,continuous,a,c,yes
+128,f,p,continuous,c,c,yes
+128,e,a,continuous,a,a,no
+128,a,y,once,e,a,no
+128,b,z,continuous,f,b,no
+128,e,o,once,b,b,yes
+128,a,k,continuous,d,d,no

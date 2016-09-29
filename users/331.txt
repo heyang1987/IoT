@@ -1,0 +1,14 @@
+331,e,d,continuous,d,a,no
+331,f,s,continuous,f,c,no
+331,g,f,continuous,f,c,yes
+331,a,n,continuous,f,d,no
+331,a,zb,once,a,d,no
+331,d,c,once,c,d,yes
+331,c,b,continuous,b,c,no
+331,e,o,once,e,b,yes
+331,f,e,once,e,b,yes
+331,g,t,once,f,d,yes
+331,c,p,once,c,d,yes
+331,b,a,once,a,b,yes
+331,b,o,continuous,b,c,no
+331,d,q,continuous,d,a,no

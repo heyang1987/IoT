@@ -1,0 +1,14 @@
+91,g,x,once,b,a,no
+91,d,u,continuous,f,c,yes
+91,c,t,once,e,b,no
+91,b,s,continuous,d,a,yes
+91,d,g,once,e,b,no
+91,b,e,once,c,d,no
+91,a,o,once,c,d,no
+91,a,d,continuous,b,c,no
+91,e,h,continuous,f,c,no
+91,f,w,continuous,a,d,yes
+91,c,f,continuous,d,a,no
+91,f,i,once,f,d,no
+91,e,v,once,f,d,yes
+91,g,d,continuous,a,d,yes

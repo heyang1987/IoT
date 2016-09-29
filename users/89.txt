@@ -1,0 +1,14 @@
+89,g,f,once,c,b,no
+89,c,b,once,f,c,yes
+89,f,e,continuous,b,a,no
+89,d,c,continuous,f,d,no
+89,d,q,once,a,d,yes
+89,b,a,continuous,e,b,no
+89,e,o,continuous,b,a,no
+89,c,p,continuous,f,d,no
+89,f,s,once,c,b,no
+89,b,o,once,f,c,no
+89,a,zb,continuous,e,d,no
+89,e,d,once,a,d,no
+89,g,t,continuous,d,c,no
+89,a,n,once,d,c,no

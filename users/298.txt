@@ -1,0 +1,14 @@
+298,d,z,once,c,c,no
+298,e,a,once,c,c,no
+298,f,n,continuous,d,d,yes
+298,c,y,continuous,b,b,yes
+298,f,zb,once,e,a,no
+298,d,l,continuous,b,b,no
+298,g,o,continuous,f,d,yes
+298,c,k,once,a,a,yes
+298,b,x,once,a,a,no
+298,a,i,once,f,d,no
+298,a,w,continuous,f,a,no
+298,e,p,continuous,d,d,no
+298,g,a,once,e,c,yes
+298,b,d,continuous,f,a,no

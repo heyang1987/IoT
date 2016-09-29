@@ -1,0 +1,14 @@
+163,a,o,continuous,c,d,no
+163,c,t,continuous,e,b,no
+163,d,u,once,f,c,no
+163,g,x,continuous,b,a,no
+163,d,g,continuous,e,b,no
+163,e,h,once,f,c,no
+163,b,e,continuous,c,d,no
+163,f,w,once,a,d,no
+163,e,v,continuous,f,d,no
+163,f,i,continuous,f,d,no
+163,c,f,once,d,a,no
+163,g,d,once,a,d,no
+163,b,s,once,d,a,no
+163,a,d,once,b,c,no

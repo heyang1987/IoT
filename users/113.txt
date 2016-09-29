@@ -1,0 +1,14 @@
+113,b,l,once,b,d,no
+113,d,n,once,d,b,yes
+113,e,o,once,f,b,no
+113,b,z,continuous,c,a,no
+113,a,y,once,b,d,no
+113,c,p,once,d,b,no
+113,e,a,continuous,e,a,no
+113,f,p,continuous,f,c,no
+113,g,c,continuous,f,c,no
+113,a,k,continuous,a,c,no
+113,g,q,once,a,c,no
+113,c,a,continuous,c,a,yes
+113,f,b,once,f,b,yes
+113,d,zb,continuous,e,c,yes

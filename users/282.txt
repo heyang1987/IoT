@@ -1,0 +1,14 @@
+282,f,x,continuous,f,c,no
+282,e,i,continuous,e,a,no
+282,b,f,once,b,b,yes
+282,b,t,continuous,c,c,no
+282,g,y,once,a,c,no
+282,d,v,continuous,e,a,yes
+282,g,k,continuous,f,c,no
+282,a,s,once,b,b,no
+282,e,w,once,f,b,no
+282,f,d,once,f,b,no
+282,c,u,once,d,d,no
+282,a,e,continuous,a,a,no
+282,c,g,continuous,c,c,no
+282,d,h,once,d,d,no

@@ -1,0 +1,14 @@
+276,b,x,once,f,d,no
+276,a,w,continuous,e,c,no
+276,e,a,once,a,a,no
+276,g,a,once,c,a,no
+276,f,n,continuous,b,b,no
+276,d,z,once,a,a,yes
+276,f,zb,once,c,c,no
+276,a,i,once,d,b,no
+276,d,l,continuous,f,a,no
+276,b,d,continuous,e,c,no
+276,c,y,continuous,f,a,no
+276,e,p,continuous,b,b,no
+276,g,o,continuous,d,b,no
+276,c,k,once,f,d,no

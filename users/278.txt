@@ -1,0 +1,14 @@
+278,b,i,once,e,b,no
+278,a,h,continuous,d,a,no
+278,c,d,continuous,f,c,yes
+278,b,w,continuous,f,c,no
+278,e,l,continuous,a,d,no
+278,d,y,continuous,a,d,no
+278,d,k,once,f,d,no
+278,f,a,once,b,a,yes
+278,g,zb,once,d,c,yes
+278,g,n,continuous,c,b,no
+278,f,p,continuous,c,b,no
+278,c,x,once,f,d,no
+278,a,v,once,e,b,no
+278,e,z,once,b,a,yes

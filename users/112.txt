@@ -1,0 +1,14 @@
+112,e,h,once,d,a,no
+112,c,f,once,b,c,no
+112,d,u,once,d,a,no
+112,d,g,continuous,c,d,no
+112,f,i,continuous,e,b,no
+112,g,x,continuous,f,d,no
+112,b,s,once,b,c,no
+112,c,t,continuous,c,d,no
+112,b,e,continuous,a,b,no
+112,f,w,once,f,c,no
+112,e,v,continuous,e,b,no
+112,a,d,once,f,b,no
+112,g,d,once,f,c,no
+112,a,o,continuous,a,b,no

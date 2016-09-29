@@ -1,0 +1,14 @@
+18,b,p,continuous,d,b,no
+18,c,q,once,e,c,yes
+18,f,f,once,f,a,yes
+18,a,a,continuous,b,d,no
+18,f,t,continuous,a,a,yes
+18,c,c,continuous,d,b,yes
+18,g,g,continuous,a,a,yes
+18,b,b,once,c,a,yes
+18,a,o,once,c,a,yes
+18,g,u,once,b,b,no
+18,e,s,once,f,a,yes
+18,d,d,once,e,c,yes
+18,e,e,continuous,f,d,no
+18,d,o,continuous,f,d,yes

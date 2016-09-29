@@ -1,0 +1,14 @@
+50,d,w,once,c,d,no
+50,f,y,once,e,b,no
+50,a,t,continuous,f,b,no
+50,g,z,continuous,f,c,yes
+50,f,k,continuous,d,a,no
+50,g,l,once,e,b,yes
+50,d,i,continuous,b,c,no
+50,e,x,continuous,d,a,yes
+50,b,u,once,a,b,yes
+50,b,g,continuous,f,b,no
+50,e,d,once,c,d,no
+50,c,v,continuous,b,c,no
+50,a,f,once,f,a,no
+50,c,h,once,a,b,no

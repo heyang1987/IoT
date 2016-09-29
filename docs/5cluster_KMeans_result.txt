@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 5 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     intel-weka.filters.unsupervised.attribute.Remove-R2-16_denormalized-weka.filters.unsupervised.instance.Denormalize-Gfirst-AAverage-S-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    200
+Attributes:   3
+              Average_comfort
+              Average_risk
+              Average_approp
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 23
+Within cluster sum of squared errors: 3.4491594478670535
+
+Initial starting points (random):
+
+Cluster 0: {0 3.285714,1 3.714286,2 3.428571}
+Cluster 1: {0 1.642857,1 1.785714,2 1.928571}
+Cluster 2: {0 2.5,1 4.142857,2 2.857143}
+Cluster 3: {0 2.928571,1 3.428571,2 3.571429}
+Cluster 4: {0 2.214286,1 2.071429,2 2.071429}
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                               Cluster#
+Attribute          Full Data          0          1          2          3          4
+                     (200.0)     (16.0)     (35.0)     (47.0)     (49.0)     (53.0)
+===================================================================================
+Average_comfort       2.4832     4.4063     1.3306     2.4407     3.2114     2.0283
+Average_risk          2.9296     4.6652     1.5694     3.2158     3.6603     2.3747
+Average_approp        2.6486      4.317     1.3633     2.7158     3.4402     2.2022
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       16 (  8%)
+1       35 ( 18%)
+2       47 ( 24%)
+3       49 ( 25%)
+4       53 ( 27%)
+

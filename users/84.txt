@@ -1,0 +1,14 @@
+84,f,f,once,e,c,yes
+84,g,u,once,f,a,no
+84,a,o,once,a,c,no
+84,c,c,continuous,b,d,yes
+84,g,g,continuous,f,d,no
+84,c,q,once,c,a,yes
+84,b,p,continuous,b,d,no
+84,a,a,continuous,f,c,no
+84,b,b,once,a,c,yes
+84,f,t,continuous,f,d,yes
+84,e,s,once,e,c,yes
+84,e,e,continuous,d,b,no
+84,d,o,continuous,d,b,yes
+84,d,d,once,c,a,yes

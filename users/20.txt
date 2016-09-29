@@ -1,0 +1,14 @@
+20,c,u,continuous,a,c,no
+20,a,s,continuous,f,b,yes
+20,c,g,once,f,c,yes
+20,e,i,once,b,d,yes
+20,f,x,once,d,b,yes
+20,g,k,once,d,b,no
+20,d,h,continuous,a,c,yes
+20,d,v,once,b,d,yes
+20,e,w,continuous,c,a,no
+20,a,e,once,e,a,no
+20,f,d,continuous,c,a,yes
+20,b,t,once,f,c,no
+20,g,y,continuous,e,c,yes
+20,b,f,continuous,f,b,yes

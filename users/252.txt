@@ -1,0 +1,14 @@
+252,e,t,continuous,e,d,no
+252,a,b,once,f,d,no
+252,b,q,once,b,a,no
+252,g,h,once,f,a,no
+252,f,u,once,f,a,no
+252,f,g,continuous,e,d,no
+252,c,o,continuous,c,b,no
+252,d,e,continuous,c,b,no
+252,d,s,once,d,c,no
+252,b,c,continuous,a,d,no
+252,c,d,once,b,a,no
+252,e,f,once,d,c,no
+252,a,p,continuous,a,d,no
+252,g,v,continuous,f,b,no

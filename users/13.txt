@@ -1,0 +1,14 @@
+13,d,g,once,c,d,no
+13,g,x,once,f,d,no
+13,a,o,once,a,b,no
+13,g,d,continuous,f,c,no
+13,c,f,continuous,b,c,no
+13,e,v,once,e,b,no
+13,b,e,once,a,b,no
+13,c,t,once,c,d,no
+13,b,s,continuous,b,c,no
+13,e,h,continuous,d,a,no
+13,f,w,continuous,f,c,no
+13,d,u,continuous,d,a,no
+13,f,i,once,e,b,no
+13,a,d,continuous,f,b,no

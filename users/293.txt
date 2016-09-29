@@ -1,0 +1,14 @@
+293,c,zb,once,e,b,no
+293,f,q,continuous,a,b,no
+293,c,n,continuous,d,a,no
+293,e,b,continuous,f,a,no
+293,d,o,continuous,f,a,no
+293,e,p,once,f,b,no
+293,g,o,once,b,c,no
+293,f,c,once,f,b,no
+293,a,z,once,c,d,no
+293,g,d,continuous,a,b,no
+293,b,p,continuous,d,a,no
+293,d,a,once,e,d,no
+293,a,l,continuous,b,c,no
+293,b,a,once,c,d,no

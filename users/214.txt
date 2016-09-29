@@ -1,0 +1,14 @@
+214,f,k,continuous,b,c,yes
+214,d,i,continuous,f,b,no
+214,e,x,continuous,b,c,no
+214,g,l,once,c,d,no
+214,c,v,continuous,f,b,yes
+214,g,z,continuous,d,a,no
+214,e,d,once,a,b,yes
+214,a,f,once,d,c,no
+214,c,h,once,f,a,no
+214,d,w,once,a,b,yes
+214,b,g,continuous,e,d,yes
+214,b,u,once,f,a,no
+214,a,t,continuous,e,d,no
+214,f,y,once,c,d,yes

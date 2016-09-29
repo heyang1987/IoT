@@ -1,0 +1,14 @@
+149,b,a,continuous,b,a,no
+149,c,b,once,c,b,no
+149,c,p,continuous,d,c,no
+149,e,o,continuous,f,a,no
+149,a,n,once,a,b,no
+149,d,q,once,e,d,yes
+149,d,c,continuous,d,c,yes
+149,f,e,continuous,f,a,yes
+149,g,t,continuous,a,b,no
+149,g,f,once,f,b,no
+149,a,zb,continuous,b,c,no
+149,f,s,once,f,b,no
+149,b,o,once,c,b,no
+149,e,d,once,e,d,no

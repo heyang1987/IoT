@@ -1,0 +1,14 @@
+105,e,q,continuous,a,a,no
+105,f,d,continuous,a,a,no
+105,g,e,once,b,b,no
+105,a,a,once,c,c,no
+105,c,o,continuous,f,d,yes
+105,d,p,once,f,a,no
+105,b,zb,once,e,a,no
+105,e,c,once,f,a,no
+105,b,n,continuous,d,d,yes
+105,g,s,continuous,c,c,no
+105,f,o,once,b,b,no
+105,d,b,continuous,f,d,yes
+105,c,a,once,e,c,yes
+105,a,p,continuous,d,d,no

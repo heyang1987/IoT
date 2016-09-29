@@ -1,0 +1,14 @@
+272,c,b,continuous,d,a,no
+272,d,c,once,e,b,yes
+272,b,a,once,c,d,no
+272,c,p,once,e,b,yes
+272,e,d,continuous,f,c,no
+272,d,q,continuous,f,c,no
+272,a,zb,once,c,b,no
+272,f,e,once,f,d,yes
+272,g,f,continuous,a,d,no
+272,e,o,once,f,d,yes
+272,f,s,continuous,a,d,yes
+272,b,o,continuous,d,a,no
+272,a,n,continuous,b,a,yes
+272,g,t,once,b,a,no

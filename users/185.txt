@@ -1,0 +1,14 @@
+185,d,a,once,a,d,no
+185,f,a,once,c,d,no
+185,g,b,continuous,d,a,no
+185,e,n,continuous,b,a,yes
+185,a,d,continuous,e,b,no
+185,c,z,once,a,d,yes
+185,a,x,once,f,c,no
+185,d,p,continuous,b,a,yes
+185,c,l,continuous,f,d,yes
+185,f,o,continuous,d,a,yes
+185,g,p,once,e,b,no
+185,b,k,once,f,c,yes
+185,b,y,continuous,f,d,yes
+185,e,zb,once,c,b,yes

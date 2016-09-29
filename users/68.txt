@@ -1,0 +1,14 @@
+68,a,v,continuous,f,d,no
+68,d,k,continuous,b,a,yes
+68,f,p,once,e,d,yes
+68,g,zb,continuous,f,a,no
+68,e,l,once,c,b,no
+68,f,a,continuous,d,c,yes
+68,d,y,once,c,b,yes
+68,g,n,once,e,d,yes
+68,e,z,continuous,d,c,yes
+68,b,i,continuous,f,d,no
+68,b,w,once,a,d,yes
+68,c,x,continuous,b,a,yes
+68,a,h,once,f,c,yes
+68,c,d,once,a,d,yes

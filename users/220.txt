@@ -1,0 +1,14 @@
+220,b,x,once,f,d,no
+220,a,w,continuous,e,c,no
+220,e,a,once,a,a,yes
+220,g,a,once,c,a,yes
+220,f,n,continuous,b,b,yes
+220,d,z,once,a,a,yes
+220,f,zb,once,c,c,no
+220,a,i,once,d,b,no
+220,d,l,continuous,f,a,yes
+220,b,d,continuous,e,c,yes
+220,c,y,continuous,f,a,yes
+220,e,p,continuous,b,b,yes
+220,g,o,continuous,d,b,yes
+220,c,k,once,f,d,yes

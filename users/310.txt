@@ -1,0 +1,14 @@
+310,e,p,continuous,c,b,yes
+310,a,l,once,e,d,yes
+310,d,a,continuous,a,d,yes
+310,b,p,once,f,b,yes
+310,b,a,continuous,f,a,no
+310,g,d,once,d,c,yes
+310,f,q,once,d,c,no
+310,e,b,once,b,a,no
+310,f,c,continuous,c,b,yes
+310,d,o,once,b,a,yes
+310,g,o,continuous,e,d,yes
+310,c,zb,continuous,a,b,yes
+310,a,z,continuous,f,a,no
+310,c,n,once,f,b,yes

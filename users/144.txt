@@ -1,0 +1,14 @@
+144,a,n,continuous,a,b,no
+144,g,t,once,a,b,no
+144,c,b,continuous,c,b,no
+144,a,zb,once,b,c,no
+144,b,a,once,b,a,no
+144,e,o,once,f,a,no
+144,e,d,continuous,e,d,no
+144,c,p,once,d,c,no
+144,g,f,continuous,f,b,no
+144,f,e,once,f,a,no
+144,f,s,continuous,f,b,no
+144,b,o,continuous,c,b,no
+144,d,c,once,d,c,no
+144,d,q,continuous,e,d,no

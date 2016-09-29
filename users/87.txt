@@ -1,0 +1,14 @@
+87,g,f,once,e,d,yes
+87,f,e,continuous,d,c,yes
+87,b,a,continuous,f,d,no
+87,c,p,continuous,b,a,no
+87,c,b,once,a,d,yes
+87,d,q,once,c,b,no
+87,e,o,continuous,d,c,yes
+87,e,d,once,c,b,no
+87,b,o,once,a,d,yes
+87,f,s,once,e,d,no
+87,a,n,once,f,a,no
+87,d,c,continuous,b,a,no
+87,a,zb,continuous,f,b,no
+87,g,t,continuous,f,a,no

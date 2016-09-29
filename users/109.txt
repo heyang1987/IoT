@@ -1,0 +1,14 @@
+109,e,a,continuous,d,b,yes
+109,c,p,once,c,c,yes
+109,f,p,continuous,f,d,yes
+109,e,o,once,e,c,yes
+109,g,c,continuous,f,d,no
+109,g,q,once,f,a,no
+109,d,zb,continuous,d,d,yes
+109,b,l,once,a,a,yes
+109,a,k,continuous,f,a,no
+109,b,z,continuous,b,b,no
+109,d,n,once,c,c,yes
+109,a,y,once,a,a,yes
+109,f,b,once,e,c,yes
+109,c,a,continuous,b,b,yes

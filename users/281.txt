@@ -1,0 +1,14 @@
+281,a,x,once,b,c,yes
+281,f,a,once,f,a,yes
+281,f,o,continuous,f,b,yes
+281,a,d,continuous,a,b,yes
+281,e,zb,once,f,c,yes
+281,e,n,continuous,e,b,yes
+281,c,l,continuous,c,d,yes
+281,g,b,continuous,f,b,yes
+281,c,z,once,d,a,yes
+281,g,p,once,a,b,yes
+281,b,k,once,b,c,yes
+281,b,y,continuous,c,d,yes
+281,d,p,continuous,e,b,yes
+281,d,a,once,d,a,yes

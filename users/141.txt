@@ -1,0 +1,14 @@
+141,d,a,once,f,c,no
+141,f,o,continuous,b,c,no
+141,e,n,continuous,f,d,no
+141,b,k,once,d,a,no
+141,f,a,once,a,b,yes
+141,c,l,continuous,e,b,no
+141,g,p,once,c,d,no
+141,g,b,continuous,b,c,no
+141,c,z,once,f,c,no
+141,e,zb,once,a,d,no
+141,a,x,once,d,a,no
+141,d,p,continuous,f,d,no
+141,a,d,continuous,c,d,no
+141,b,y,continuous,e,b,no

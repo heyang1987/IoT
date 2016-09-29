@@ -1,0 +1,14 @@
+271,f,a,continuous,b,a,yes
+271,b,i,continuous,e,b,yes
+271,c,d,once,f,c,no
+271,c,x,continuous,f,d,no
+271,a,v,continuous,e,b,no
+271,d,y,once,a,d,yes
+271,d,k,continuous,f,d,yes
+271,g,n,once,c,b,no
+271,e,z,continuous,b,a,no
+271,g,zb,continuous,d,c,no
+271,a,h,once,d,a,no
+271,e,l,once,a,d,yes
+271,b,w,once,f,c,no
+271,f,p,once,c,b,no

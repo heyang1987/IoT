@@ -1,0 +1,14 @@
+213,a,b,continuous,f,d,no
+213,f,u,continuous,f,a,no
+213,c,d,continuous,b,a,yes
+213,c,o,once,c,b,yes
+213,e,t,once,e,d,no
+213,f,g,once,e,d,yes
+213,g,v,once,f,b,no
+213,b,c,once,a,d,yes
+213,g,h,continuous,f,a,yes
+213,d,e,once,c,b,yes
+213,e,f,continuous,d,c,no
+213,a,p,once,a,d,yes
+213,b,q,continuous,b,a,no
+213,d,s,continuous,d,c,yes

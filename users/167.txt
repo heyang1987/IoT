@@ -1,0 +1,14 @@
+167,b,b,once,f,a,no
+167,d,d,once,b,b,yes
+167,c,c,continuous,a,a,no
+167,g,u,once,f,b,no
+167,b,p,continuous,a,a,no
+167,a,o,once,f,a,no
+167,f,t,continuous,e,a,yes
+167,e,e,continuous,c,c,yes
+167,a,a,continuous,f,d,no
+167,d,o,continuous,c,c,yes
+167,e,s,once,d,d,yes
+167,c,q,once,b,b,yes
+167,f,f,once,d,d,yes
+167,g,g,continuous,e,a,no

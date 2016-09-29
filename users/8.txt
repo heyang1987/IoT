@@ -1,0 +1,14 @@
+8,g,w,continuous,c,c,no
+8,c,e,once,e,c,yes
+8,b,d,continuous,d,b,yes
+8,f,h,continuous,a,a,yes
+8,e,u,continuous,a,a,yes
+8,f,v,once,b,b,yes
+8,g,i,once,b,b,no
+8,a,q,continuous,d,b,yes
+8,d,t,once,f,a,yes
+8,a,c,once,c,a,yes
+8,e,g,once,f,a,yes
+8,c,s,continuous,f,d,yes
+8,d,f,continuous,f,d,yes
+8,b,o,once,e,c,yes

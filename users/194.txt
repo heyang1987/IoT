@@ -1,0 +1,14 @@
+194,f,d,continuous,a,c,no
+194,e,i,once,f,c,no
+194,g,y,continuous,c,a,no
+194,c,g,once,e,a,yes
+194,g,k,once,b,d,no
+194,a,s,continuous,d,d,no
+194,a,e,once,c,c,no
+194,b,t,once,e,a,no
+194,c,u,continuous,f,b,no
+194,e,w,continuous,a,c,no
+194,b,f,continuous,d,d,no
+194,d,v,once,f,c,no
+194,d,h,continuous,f,b,no
+194,f,x,once,b,d,no

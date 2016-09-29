@@ -1,0 +1,14 @@
+261,c,i,continuous,b,b,no
+261,a,u,once,a,a,yes
+261,e,y,once,e,a,no
+261,d,x,continuous,d,d,no
+261,b,h,once,a,a,no
+261,g,p,once,f,c,no
+261,c,w,once,c,c,no
+261,e,k,continuous,d,d,no
+261,g,a,continuous,f,b,no
+261,f,z,continuous,f,b,no
+261,d,d,once,c,c,yes
+261,a,g,continuous,f,a,no
+261,f,l,once,e,a,yes
+261,b,v,continuous,b,b,no

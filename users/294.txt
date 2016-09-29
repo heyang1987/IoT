@@ -1,0 +1,14 @@
+294,b,b,once,f,b,no
+294,d,o,continuous,b,d,yes
+294,a,a,continuous,e,a,no
+294,f,f,once,c,a,no
+294,g,u,once,e,c,yes
+294,b,p,continuous,f,c,no
+294,f,t,continuous,d,b,no
+294,g,g,continuous,d,b,no
+294,e,e,continuous,b,d,no
+294,e,s,once,c,a,no
+294,d,d,once,a,c,yes
+294,c,c,continuous,f,c,no
+294,c,q,once,a,c,no
+294,a,o,once,f,b,no

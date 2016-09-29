@@ -1,0 +1,14 @@
+115,b,d,once,e,a,no
+115,f,h,once,b,d,no
+115,d,f,once,f,c,no
+115,c,s,once,f,c,no
+115,a,c,continuous,d,d,no
+115,e,u,once,b,d,no
+115,e,g,continuous,a,c,no
+115,b,o,continuous,f,b,no
+115,d,t,continuous,a,c,no
+115,c,e,continuous,f,b,no
+115,f,v,continuous,c,a,no
+115,g,i,continuous,c,a,no
+115,a,q,once,e,a,no
+115,g,w,once,d,b,no

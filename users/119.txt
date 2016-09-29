@@ -1,0 +1,14 @@
+119,b,h,continuous,a,a,no
+119,c,i,once,b,b,yes
+119,f,l,continuous,e,a,no
+119,f,z,once,f,b,yes
+119,g,p,continuous,f,c,no
+119,e,k,once,d,d,yes
+119,e,y,continuous,e,a,yes
+119,a,g,once,f,a,no
+119,d,d,continuous,c,c,yes
+119,g,a,once,f,b,no
+119,a,u,continuous,a,a,no
+119,b,v,once,b,b,yes
+119,c,w,continuous,c,c,no
+119,d,x,once,d,d,yes

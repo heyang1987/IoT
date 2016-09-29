@@ -1,0 +1,14 @@
+303,d,g,once,c,d,no
+303,g,x,once,f,d,no
+303,a,o,once,a,b,no
+303,g,d,continuous,f,c,no
+303,c,f,continuous,b,c,no
+303,e,v,once,e,b,no
+303,b,e,once,a,b,no
+303,c,t,once,c,d,no
+303,b,s,continuous,b,c,no
+303,e,h,continuous,d,a,no
+303,f,w,continuous,f,c,no
+303,d,u,continuous,d,a,yes
+303,f,i,once,e,b,no
+303,a,d,continuous,f,b,no

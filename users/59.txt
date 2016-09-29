@@ -1,0 +1,14 @@
+59,e,l,continuous,e,d,no
+59,b,w,continuous,c,b,no
+59,g,zb,once,a,b,no
+59,c,d,continuous,c,b,yes
+59,c,x,once,d,c,no
+59,b,i,once,b,a,no
+59,d,y,continuous,e,d,yes
+59,d,k,once,d,c,yes
+59,a,h,continuous,a,d,no
+59,g,n,continuous,f,b,no
+59,a,v,once,b,a,no
+59,f,p,continuous,f,b,no
+59,e,z,once,f,a,no
+59,f,a,once,f,a,no

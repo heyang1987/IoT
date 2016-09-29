@@ -1,0 +1,14 @@
+232,g,x,continuous,c,d,no
+232,c,t,continuous,f,a,no
+232,c,f,once,e,d,no
+232,a,d,once,c,b,no
+232,b,e,continuous,d,c,no
+232,g,d,once,b,c,no
+232,f,w,once,b,c,no
+232,e,v,continuous,a,b,no
+232,a,o,continuous,d,c,no
+232,d,u,once,f,b,yes
+232,e,h,once,f,b,no
+232,f,i,continuous,a,b,no
+232,d,g,continuous,f,a,yes
+232,b,s,once,e,d,no

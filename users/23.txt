@@ -1,0 +1,14 @@
+23,b,w,continuous,d,a,yes
+23,a,v,once,c,d,no
+23,e,z,once,f,d,no
+23,g,n,continuous,a,d,no
+23,e,l,continuous,f,c,no
+23,a,h,continuous,b,c,no
+23,b,i,once,c,d,no
+23,c,x,once,e,b,no
+23,d,k,once,e,b,yes
+23,f,a,once,f,d,no
+23,f,p,continuous,a,d,yes
+23,c,d,continuous,d,a,no
+23,d,y,continuous,f,c,yes
+23,g,zb,once,b,a,no

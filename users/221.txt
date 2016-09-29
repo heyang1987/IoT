@@ -1,0 +1,14 @@
+221,e,w,continuous,b,b,no
+221,g,k,once,c,c,yes
+221,f,x,once,c,c,no
+221,d,h,continuous,f,a,yes
+221,a,e,once,d,b,yes
+221,b,f,continuous,e,c,yes
+221,c,g,once,f,d,no
+221,b,t,once,f,d,no
+221,a,s,continuous,e,c,no
+221,e,i,once,a,a,no
+221,g,y,continuous,d,d,no
+221,c,u,continuous,f,a,no
+221,d,v,once,a,a,yes
+221,f,d,continuous,b,b,no

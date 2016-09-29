@@ -1,0 +1,14 @@
+180,e,b,once,f,a,no
+180,c,n,once,d,a,no
+180,g,o,continuous,b,c,no
+180,f,c,continuous,f,b,no
+180,d,a,continuous,e,d,yes
+180,e,p,continuous,f,b,no
+180,b,a,continuous,c,d,no
+180,b,p,once,d,a,no
+180,a,l,once,b,c,no
+180,c,zb,continuous,e,b,yes
+180,a,z,continuous,c,d,no
+180,g,d,once,a,b,no
+180,d,o,once,f,a,yes
+180,f,q,once,a,b,no

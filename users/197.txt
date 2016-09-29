@@ -1,0 +1,14 @@
+197,f,i,once,d,c,no
+197,e,h,continuous,c,b,no
+197,e,v,once,d,c,no
+197,g,d,continuous,e,d,no
+197,a,d,continuous,f,c,no
+197,f,w,continuous,e,d,no
+197,d,g,once,b,a,no
+197,b,e,once,f,d,no
+197,g,x,once,f,a,no
+197,c,f,continuous,a,d,no
+197,c,t,once,b,a,no
+197,b,s,continuous,a,d,no
+197,a,o,once,f,d,no
+197,d,u,continuous,c,b,no

@@ -1,0 +1,14 @@
+156,e,n,continuous,d,c,no
+156,f,a,once,e,b,no
+156,d,p,continuous,d,c,yes
+156,b,y,continuous,b,a,yes
+156,d,a,once,c,b,yes
+156,c,z,once,c,b,no
+156,c,l,continuous,b,a,no
+156,e,zb,once,e,d,yes
+156,a,x,once,a,d,yes
+156,b,k,once,a,d,no
+156,g,b,continuous,f,c,no
+156,a,d,continuous,f,d,no
+156,g,p,once,f,d,yes
+156,f,o,continuous,f,c,no

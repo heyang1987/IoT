@@ -1,0 +1,14 @@
+151,a,f,continuous,f,a,no
+151,e,d,continuous,c,d,no
+151,b,u,continuous,a,b,yes
+151,e,x,once,d,a,no
+151,d,i,once,b,c,no
+151,f,y,continuous,e,b,no
+151,c,v,once,b,c,no
+151,g,z,once,f,c,no
+151,b,g,once,f,b,no
+151,f,k,once,d,a,no
+151,a,t,once,f,b,no
+151,c,h,continuous,a,b,no
+151,d,w,continuous,c,d,no
+151,g,l,continuous,e,b,no

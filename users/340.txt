@@ -1,0 +1,14 @@
+340,b,o,continuous,a,c,no
+340,b,d,once,f,c,no
+340,f,h,once,d,b,no
+340,c,e,continuous,a,c,no
+340,a,q,once,f,c,no
+340,g,i,continuous,e,c,no
+340,a,c,continuous,f,b,no
+340,g,w,once,f,d,no
+340,c,s,once,b,d,no
+340,e,g,continuous,c,a,no
+340,d,f,once,b,d,yes
+340,e,u,once,d,b,no
+340,d,t,continuous,c,a,no
+340,f,v,continuous,e,c,no

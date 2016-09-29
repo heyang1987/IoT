@@ -1,0 +1,14 @@
+288,f,z,once,c,a,yes
+288,e,y,continuous,b,d,yes
+288,d,x,once,a,c,yes
+288,c,i,once,f,b,yes
+288,c,w,continuous,f,c,yes
+288,g,a,once,c,a,no
+288,f,l,continuous,b,d,no
+288,a,u,continuous,e,a,no
+288,b,v,once,f,b,no
+288,g,p,continuous,d,b,no
+288,b,h,continuous,e,a,no
+288,d,d,continuous,f,c,yes
+288,e,k,once,a,c,no
+288,a,g,once,d,d,no

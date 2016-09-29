@@ -1,0 +1,14 @@
+184,c,p,continuous,a,b,no
+184,d,q,once,b,c,yes
+184,g,f,once,d,a,no
+184,b,o,once,f,b,no
+184,f,s,once,d,a,yes
+184,a,zb,continuous,f,c,no
+184,f,e,continuous,c,d,no
+184,b,a,continuous,f,a,no
+184,e,o,continuous,c,d,no
+184,c,b,once,f,b,no
+184,e,d,once,b,c,no
+184,a,n,once,e,b,no
+184,d,c,continuous,a,b,yes
+184,g,t,continuous,e,b,no

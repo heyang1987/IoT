@@ -1,0 +1,14 @@
+334,b,a,once,f,a,yes
+334,c,p,once,a,b,yes
+334,d,q,continuous,b,c,yes
+334,e,d,continuous,b,c,yes
+334,e,o,once,c,d,yes
+334,b,o,continuous,f,b,no
+334,g,t,once,e,b,yes
+334,d,c,once,a,b,yes
+334,f,e,once,c,d,yes
+334,g,f,continuous,d,a,yes
+334,c,b,continuous,f,b,yes
+334,a,n,continuous,e,b,yes
+334,f,s,continuous,d,a,yes
+334,a,zb,once,f,c,no

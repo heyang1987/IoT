@@ -1,0 +1,14 @@
+187,g,v,once,c,b,no
+187,f,g,once,a,d,yes
+187,b,q,continuous,e,b,no
+187,e,t,once,a,d,yes
+187,b,c,once,d,a,yes
+187,g,h,continuous,b,a,no
+187,a,b,continuous,c,d,no
+187,a,p,once,d,a,no
+187,e,f,continuous,f,d,no
+187,d,s,continuous,f,d,yes
+187,f,u,continuous,b,a,no
+187,c,d,continuous,e,b,yes
+187,d,e,once,f,c,no
+187,c,o,once,f,c,yes

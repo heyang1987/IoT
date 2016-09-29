@@ -1,0 +1,14 @@
+99,e,t,continuous,e,d,no
+99,a,b,once,f,d,no
+99,b,q,once,b,a,yes
+99,g,h,once,f,a,no
+99,f,u,once,f,a,no
+99,f,g,continuous,e,d,no
+99,c,o,continuous,c,b,no
+99,d,e,continuous,c,b,yes
+99,d,s,once,d,c,yes
+99,b,c,continuous,a,d,no
+99,c,d,once,b,a,no
+99,e,f,once,d,c,yes
+99,a,p,continuous,a,d,no
+99,g,v,continuous,f,b,no

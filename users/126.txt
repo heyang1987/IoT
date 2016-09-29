@@ -1,0 +1,14 @@
+126,e,p,once,c,a,no
+126,g,o,once,e,a,no
+126,c,y,once,a,c,no
+126,a,i,continuous,e,a,yes
+126,e,a,continuous,b,d,no
+126,b,x,continuous,f,c,no
+126,f,n,once,c,a,no
+126,d,l,once,a,c,no
+126,a,w,once,f,b,no
+126,f,zb,continuous,d,b,no
+126,d,z,continuous,b,d,yes
+126,g,a,continuous,d,d,no
+126,c,k,continuous,f,c,no
+126,b,d,once,f,b,no

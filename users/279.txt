@@ -1,0 +1,14 @@
+279,e,q,continuous,f,c,no
+279,g,s,continuous,b,d,no
+279,c,a,once,d,d,no
+279,b,zb,once,d,b,yes
+279,d,p,once,f,b,yes
+279,g,e,once,a,c,yes
+279,d,b,continuous,e,a,yes
+279,f,o,once,a,c,yes
+279,f,d,continuous,f,c,yes
+279,c,o,continuous,e,a,no
+279,e,c,once,f,b,no
+279,a,p,continuous,c,a,yes
+279,b,n,continuous,c,a,yes
+279,a,a,once,b,d,no

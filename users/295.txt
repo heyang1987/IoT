@@ -1,0 +1,14 @@
+295,e,s,continuous,a,c,no
+295,d,o,once,f,c,no
+295,g,u,continuous,c,a,no
+295,f,t,once,b,d,yes
+295,c,q,continuous,f,b,no
+295,c,c,once,e,a,yes
+295,a,a,once,c,c,no
+295,d,d,continuous,f,b,no
+295,a,o,continuous,d,d,no
+295,b,b,continuous,d,d,no
+295,f,f,continuous,a,c,yes
+295,b,p,once,e,a,no
+295,g,g,once,b,d,no
+295,e,e,once,f,c,no

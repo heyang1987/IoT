@@ -1,0 +1,14 @@
+48,b,o,continuous,d,d,no
+48,d,t,continuous,f,b,no
+48,c,s,once,e,a,no
+48,g,i,continuous,a,c,no
+48,e,u,once,f,c,no
+48,c,e,continuous,d,d,no
+48,a,c,continuous,b,b,no
+48,e,g,continuous,f,b,no
+48,f,h,once,f,c,no
+48,g,w,once,b,d,no
+48,b,d,once,c,c,no
+48,f,v,continuous,a,c,no
+48,a,q,once,c,c,no
+48,d,f,once,e,a,no

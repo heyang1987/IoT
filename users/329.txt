@@ -1,0 +1,14 @@
+329,c,x,continuous,c,d,no
+329,a,h,once,f,b,no
+329,g,zb,continuous,f,d,no
+329,e,z,continuous,e,b,no
+329,d,y,once,d,a,yes
+329,b,i,continuous,a,b,no
+329,a,v,continuous,a,b,no
+329,f,p,once,f,c,yes
+329,f,a,continuous,e,b,yes
+329,c,d,once,b,c,no
+329,b,w,once,b,c,no
+329,d,k,continuous,c,d,no
+329,e,l,once,d,a,yes
+329,g,n,once,f,c,no

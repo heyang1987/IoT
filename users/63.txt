@@ -1,0 +1,14 @@
+63,e,a,once,f,c,no
+63,a,w,continuous,d,d,no
+63,d,z,once,f,c,no
+63,b,d,continuous,d,d,no
+63,g,o,continuous,c,c,no
+63,e,p,continuous,a,c,no
+63,a,i,once,c,c,no
+63,d,l,continuous,f,b,no
+63,c,y,continuous,f,b,no
+63,f,zb,once,b,d,no
+63,c,k,once,e,a,no
+63,f,n,continuous,a,c,no
+63,g,a,once,b,b,no
+63,b,x,once,e,a,no

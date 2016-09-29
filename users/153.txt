@@ -1,0 +1,14 @@
+153,a,v,once,a,b,yes
+153,b,i,once,a,b,no
+153,d,y,continuous,d,a,yes
+153,a,h,continuous,f,b,no
+153,g,zb,once,f,d,no
+153,c,d,continuous,b,c,yes
+153,e,l,continuous,d,a,no
+153,b,w,continuous,b,c,no
+153,d,k,once,c,d,yes
+153,e,z,once,e,b,no
+153,f,a,once,e,b,no
+153,f,p,continuous,f,c,no
+153,g,n,continuous,f,c,no
+153,c,x,once,c,d,no

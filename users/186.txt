@@ -1,0 +1,14 @@
+186,c,p,continuous,e,b,yes
+186,e,o,continuous,f,d,yes
+186,d,c,continuous,e,b,yes
+186,f,e,continuous,f,d,yes
+186,b,o,once,d,a,yes
+186,a,n,once,b,a,no
+186,b,a,continuous,c,d,yes
+186,c,b,once,d,a,yes
+186,g,t,continuous,b,a,no
+186,f,s,once,a,d,yes
+186,e,d,once,f,c,yes
+186,a,zb,continuous,c,b,yes
+186,g,f,once,a,d,no
+186,d,q,once,f,c,no

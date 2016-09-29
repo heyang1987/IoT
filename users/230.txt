@@ -1,0 +1,14 @@
+230,a,q,once,a,a,no
+230,e,g,continuous,d,d,no
+230,c,e,continuous,b,b,no
+230,f,v,continuous,f,b,no
+230,b,d,once,a,a,no
+230,a,c,continuous,f,a,no
+230,d,f,once,c,c,no
+230,f,h,once,e,a,no
+230,d,t,continuous,d,d,no
+230,e,u,once,e,a,no
+230,b,o,continuous,b,b,no
+230,g,i,continuous,f,b,no
+230,c,s,once,c,c,no
+230,g,w,once,f,c,no

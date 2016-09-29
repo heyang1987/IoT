@@ -1,0 +1,14 @@
+160,f,w,once,f,b,no
+160,f,i,continuous,f,a,yes
+160,g,x,continuous,a,b,no
+160,d,u,once,e,d,yes
+160,b,e,continuous,b,a,yes
+160,d,g,continuous,d,c,no
+160,a,o,continuous,b,a,no
+160,c,t,continuous,d,c,no
+160,e,v,continuous,f,a,yes
+160,g,d,once,f,b,no
+160,b,s,once,c,b,yes
+160,e,h,once,e,d,no
+160,a,d,once,a,d,yes
+160,c,f,once,c,b,yes

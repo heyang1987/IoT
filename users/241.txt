@@ -1,0 +1,14 @@
+241,f,d,continuous,e,a,yes
+241,b,n,continuous,a,c,yes
+241,a,p,continuous,a,c,no
+241,e,q,continuous,e,a,yes
+241,d,b,continuous,c,c,yes
+241,a,a,once,f,c,yes
+241,e,c,once,d,d,yes
+241,c,a,once,b,b,no
+241,g,s,continuous,f,c,yes
+241,g,e,once,f,b,yes
+241,c,o,continuous,c,c,no
+241,f,o,once,f,b,yes
+241,b,zb,once,b,d,no
+241,d,p,once,d,d,yes

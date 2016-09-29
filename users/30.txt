@@ -1,0 +1,14 @@
+30,a,d,once,f,c,no
+30,d,u,once,c,b,no
+30,b,e,continuous,f,d,yes
+30,b,s,once,a,d,yes
+30,g,d,once,e,d,no
+30,a,o,continuous,f,d,no
+30,d,g,continuous,b,a,yes
+30,g,x,continuous,f,a,yes
+30,f,i,continuous,d,c,no
+30,c,t,continuous,b,a,no
+30,c,f,once,a,d,yes
+30,e,v,continuous,d,c,no
+30,e,h,once,c,b,no
+30,f,w,once,e,d,no

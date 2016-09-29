@@ -1,0 +1,14 @@
+259,b,x,once,b,d,no
+259,c,k,once,b,d,no
+259,f,zb,once,f,d,no
+259,e,p,continuous,e,c,yes
+259,b,d,continuous,a,c,yes
+259,e,a,once,d,b,yes
+259,c,y,continuous,c,a,yes
+259,a,w,continuous,a,c,no
+259,d,z,once,d,b,no
+259,d,l,continuous,c,a,no
+259,a,i,once,f,c,no
+259,g,a,once,f,b,no
+259,g,o,continuous,f,c,no
+259,f,n,continuous,e,c,no

@@ -1,0 +1,14 @@
+3,c,b,continuous,d,a,no
+3,d,c,once,e,b,no
+3,b,a,once,c,d,no
+3,c,p,once,e,b,no
+3,e,d,continuous,f,c,no
+3,d,q,continuous,f,c,no
+3,a,z,once,c,b,no
+3,f,e,once,f,d,no
+3,g,f,continuous,a,d,no
+3,e,o,once,f,d,no
+3,f,s,continuous,a,d,no
+3,b,o,continuous,d,a,no
+3,a,n,continuous,b,a,no
+3,g,t,once,b,a,no

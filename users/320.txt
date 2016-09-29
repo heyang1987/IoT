@@ -1,0 +1,14 @@
+320,f,v,once,a,c,no
+320,f,h,continuous,f,c,no
+320,c,e,once,d,d,no
+320,g,i,once,a,c,no
+320,b,o,once,d,d,no
+320,d,f,continuous,e,a,no
+320,c,s,continuous,e,a,no
+320,a,c,once,b,b,no
+320,a,q,continuous,c,c,no
+320,g,w,continuous,b,d,no
+320,d,t,once,f,b,no
+320,e,u,continuous,f,c,no
+320,e,g,once,f,b,no
+320,b,d,continuous,c,c,no

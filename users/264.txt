@@ -1,0 +1,14 @@
+264,b,e,once,b,a,no
+264,f,i,once,f,a,no
+264,f,w,continuous,f,b,no
+264,e,v,once,f,a,no
+264,g,d,continuous,f,b,no
+264,b,s,continuous,c,b,no
+264,c,t,once,d,c,yes
+264,d,g,once,d,c,no
+264,a,o,once,b,a,no
+264,d,u,continuous,e,d,yes
+264,a,d,continuous,a,d,no
+264,e,h,continuous,e,d,no
+264,c,f,continuous,c,b,no
+264,g,x,once,a,b,no

@@ -1,0 +1,14 @@
+249,a,x,continuous,f,b,yes
+249,b,k,continuous,f,b,no
+249,f,a,continuous,d,c,yes
+249,c,z,continuous,b,c,yes
+249,b,y,once,a,b,no
+249,e,zb,continuous,d,a,no
+249,e,n,once,c,d,no
+249,g,b,once,e,d,no
+249,f,o,once,e,d,no
+249,a,d,once,f,a,no
+249,d,a,continuous,b,c,no
+249,g,p,continuous,f,a,no
+249,c,l,once,a,b,no
+249,d,p,once,c,d,no

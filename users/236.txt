@@ -1,0 +1,14 @@
+236,e,i,continuous,c,c,yes
+236,e,w,once,d,d,yes
+236,d,v,continuous,c,c,no
+236,d,h,once,b,b,no
+236,a,s,once,f,a,no
+236,g,k,continuous,e,a,yes
+236,c,g,continuous,a,a,no
+236,f,d,once,d,d,yes
+236,b,t,continuous,a,a,no
+236,f,x,continuous,e,a,no
+236,a,e,continuous,f,d,no
+236,g,y,once,f,b,yes
+236,c,u,once,b,b,yes
+236,b,f,once,f,a,yes

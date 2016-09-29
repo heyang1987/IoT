@@ -1,0 +1,14 @@
+100,a,c,continuous,e,c,no
+100,a,q,once,f,d,yes
+100,g,w,once,e,a,no
+100,g,i,continuous,d,d,yes
+100,f,h,once,c,c,no
+100,e,g,continuous,b,b,no
+100,c,s,once,a,a,yes
+100,e,u,once,c,c,yes
+100,f,v,continuous,d,d,yes
+100,c,e,continuous,f,a,yes
+100,d,t,continuous,b,b,no
+100,d,f,once,a,a,no
+100,b,d,once,f,d,yes
+100,b,o,continuous,f,a,no

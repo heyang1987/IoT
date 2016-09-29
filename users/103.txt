@@ -1,0 +1,14 @@
+103,a,q,once,b,d,no
+103,c,s,once,d,b,no
+103,b,o,continuous,c,a,no
+103,c,e,continuous,c,a,no
+103,d,t,continuous,e,c,no
+103,a,c,continuous,a,c,no
+103,b,d,once,b,d,no
+103,g,w,once,a,a,no
+103,g,i,continuous,f,a,no
+103,d,f,once,d,b,no
+103,f,h,once,f,d,no
+103,e,g,continuous,e,c,no
+103,e,u,once,f,d,no
+103,f,v,continuous,f,a,no

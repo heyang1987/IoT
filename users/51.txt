@@ -1,0 +1,14 @@
+51,c,o,once,e,a,yes
+51,g,e,continuous,a,c,no
+51,d,p,continuous,f,b,no
+51,b,n,once,c,a,no
+51,f,d,once,f,c,no
+51,a,p,once,c,a,no
+51,c,a,continuous,d,d,no
+51,g,s,once,b,d,no
+51,b,zb,continuous,d,b,no
+51,f,o,continuous,a,c,no
+51,e,q,once,f,c,no
+51,a,a,continuous,b,d,no
+51,e,c,continuous,f,b,no
+51,d,b,once,e,a,no

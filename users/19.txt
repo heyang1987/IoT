@@ -1,0 +1,14 @@
+19,d,x,once,b,b,yes
+19,a,u,continuous,f,d,no
+19,c,i,once,f,a,yes
+19,d,d,continuous,a,a,yes
+19,b,v,once,f,a,no
+19,f,z,once,d,d,no
+19,e,y,continuous,c,c,no
+19,c,w,continuous,a,a,no
+19,b,h,continuous,f,d,yes
+19,a,g,once,e,c,no
+19,f,l,continuous,c,c,yes
+19,g,a,once,d,d,no
+19,e,k,once,b,b,no
+19,g,p,continuous,e,a,no

@@ -1,0 +1,14 @@
+212,d,h,continuous,c,a,no
+212,e,w,continuous,e,c,yes
+212,f,x,once,f,d,yes
+212,d,v,once,d,b,no
+212,g,y,continuous,f,a,no
+212,c,u,continuous,c,a,no
+212,c,g,once,b,d,no
+212,g,k,once,f,d,no
+212,f,d,continuous,e,c,no
+212,b,f,continuous,a,c,no
+212,e,i,once,d,b,yes
+212,b,t,once,b,d,no
+212,a,e,once,f,c,no
+212,a,s,continuous,a,c,no

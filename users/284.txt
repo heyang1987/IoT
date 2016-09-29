@@ -1,0 +1,14 @@
+284,a,f,continuous,f,a,yes
+284,e,d,continuous,c,d,no
+284,b,u,continuous,a,b,no
+284,e,x,once,d,a,no
+284,d,i,once,b,c,no
+284,f,y,continuous,e,b,no
+284,c,v,once,b,c,no
+284,g,z,once,f,c,no
+284,b,g,once,f,b,no
+284,f,k,once,d,a,no
+284,a,t,once,f,b,no
+284,c,h,continuous,a,b,no
+284,d,w,continuous,c,d,no
+284,g,l,continuous,e,b,no

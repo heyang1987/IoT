@@ -1,0 +1,14 @@
+107,f,q,once,f,d,no
+107,g,o,continuous,a,d,no
+107,g,d,once,f,d,no
+107,a,l,once,a,d,no
+107,e,b,once,e,b,no
+107,b,a,continuous,b,a,no
+107,e,p,continuous,f,c,yes
+107,f,c,continuous,f,c,yes
+107,d,o,once,e,b,yes
+107,c,n,once,c,b,no
+107,c,zb,continuous,d,c,no
+107,d,a,continuous,d,a,no
+107,a,z,continuous,b,a,no
+107,b,p,once,c,b,no

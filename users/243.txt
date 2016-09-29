@@ -1,0 +1,14 @@
+243,g,x,once,b,a,no
+243,d,u,continuous,f,c,no
+243,c,t,once,e,b,yes
+243,b,s,continuous,d,a,no
+243,d,g,once,e,b,no
+243,b,e,once,c,d,no
+243,a,o,once,c,d,no
+243,a,d,continuous,b,c,no
+243,e,h,continuous,f,c,no
+243,f,w,continuous,a,d,no
+243,c,f,continuous,d,a,no
+243,f,i,once,f,d,no
+243,e,v,once,f,d,no
+243,g,d,continuous,a,d,no

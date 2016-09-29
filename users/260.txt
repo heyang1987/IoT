@@ -1,0 +1,14 @@
+260,a,p,once,f,b,no
+260,f,g,once,d,a,no
+260,e,f,continuous,c,d,no
+260,d,e,once,b,c,no
+260,c,o,once,b,c,no
+260,f,u,continuous,e,b,no
+260,b,c,once,f,b,no
+260,a,b,continuous,f,a,no
+260,e,t,once,d,a,no
+260,g,v,once,f,c,no
+260,g,h,continuous,e,b,no
+260,b,q,continuous,a,b,no
+260,d,s,continuous,c,d,yes
+260,c,d,continuous,a,b,no

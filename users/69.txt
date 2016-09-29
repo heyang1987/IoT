@@ -1,0 +1,14 @@
+69,f,zb,continuous,c,c,no
+69,a,w,once,e,c,yes
+69,c,k,continuous,f,d,no
+69,e,p,once,b,b,no
+69,e,a,continuous,a,a,yes
+69,f,n,once,b,b,no
+69,c,y,once,f,a,yes
+69,b,d,once,e,c,yes
+69,d,z,continuous,a,a,yes
+69,d,l,once,f,a,no
+69,a,i,continuous,d,b,no
+69,g,o,once,d,b,no
+69,g,a,continuous,c,a,no
+69,b,x,continuous,f,d,no

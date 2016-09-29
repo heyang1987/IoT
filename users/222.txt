@@ -1,0 +1,14 @@
+222,c,p,continuous,e,b,no
+222,e,o,continuous,f,d,no
+222,d,c,continuous,e,b,no
+222,f,e,continuous,f,d,yes
+222,b,o,once,d,a,no
+222,a,n,once,b,a,no
+222,b,a,continuous,c,d,no
+222,c,b,once,d,a,yes
+222,g,t,continuous,b,a,no
+222,f,s,once,a,d,yes
+222,e,d,once,f,c,yes
+222,a,zb,continuous,c,b,no
+222,g,f,once,a,d,no
+222,d,q,once,f,c,no

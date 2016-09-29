@@ -1,0 +1,14 @@
+246,b,i,once,f,a,no
+246,c,x,once,a,b,no
+246,f,p,continuous,d,a,yes
+246,b,w,continuous,f,b,no
+246,f,a,once,c,d,yes
+246,e,l,continuous,b,c,yes
+246,a,h,continuous,e,d,no
+246,a,v,once,f,a,no
+246,c,d,continuous,f,b,yes
+246,d,y,continuous,b,c,yes
+246,g,zb,once,e,b,no
+246,g,n,continuous,d,a,no
+246,d,k,once,a,b,yes
+246,e,z,once,c,d,yes

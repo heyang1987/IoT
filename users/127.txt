@@ -1,0 +1,14 @@
+127,a,y,once,f,d,no
+127,a,k,continuous,e,c,no
+127,f,p,continuous,d,b,no
+127,b,z,continuous,f,a,no
+127,d,zb,continuous,b,b,yes
+127,f,b,once,c,a,no
+127,e,a,continuous,b,d,no
+127,d,n,once,a,a,yes
+127,e,o,once,c,a,no
+127,b,l,once,f,d,no
+127,g,q,once,e,c,no
+127,g,c,continuous,d,b,no
+127,c,a,continuous,f,a,no
+127,c,p,once,a,a,no

@@ -1,0 +1,14 @@
+280,f,f,once,e,c,no
+280,g,u,once,f,a,no
+280,a,o,once,a,c,yes
+280,c,c,continuous,b,d,no
+280,g,g,continuous,f,d,no
+280,c,q,once,c,a,no
+280,b,p,continuous,b,d,no
+280,a,a,continuous,f,c,no
+280,b,b,once,a,c,yes
+280,f,t,continuous,f,d,no
+280,e,s,once,e,c,no
+280,e,e,continuous,d,b,no
+280,d,o,continuous,d,b,no
+280,d,d,once,c,a,yes

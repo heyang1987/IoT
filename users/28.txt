@@ -1,0 +1,14 @@
+28,g,h,once,e,b,yes
+28,e,f,once,c,d,no
+28,a,p,continuous,f,b,no
+28,a,b,once,f,a,no
+28,c,o,continuous,b,c,no
+28,g,v,continuous,f,c,no
+28,b,c,continuous,f,b,no
+28,b,q,once,a,b,no
+28,f,g,continuous,d,a,no
+28,f,u,once,e,b,no
+28,d,s,once,c,d,yes
+28,c,d,once,a,b,no
+28,d,e,continuous,b,c,no
+28,e,t,continuous,d,a,no

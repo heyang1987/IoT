@@ -1,0 +1,14 @@
+205,c,s,continuous,f,c,no
+205,g,w,continuous,d,b,no
+205,e,u,continuous,b,d,no
+205,g,i,once,c,a,no
+205,d,t,once,a,c,no
+205,b,o,once,f,b,yes
+205,a,c,once,d,d,no
+205,e,g,once,a,c,no
+205,a,q,continuous,e,a,no
+205,f,h,continuous,b,d,yes
+205,f,v,once,c,a,no
+205,b,d,continuous,e,a,no
+205,d,f,continuous,f,c,no
+205,c,e,once,f,b,yes

@@ -1,0 +1,14 @@
+66,b,zb,continuous,f,c,no
+66,d,b,once,a,a,no
+66,d,p,continuous,b,b,no
+66,g,e,continuous,d,d,no
+66,c,o,once,a,a,no
+66,b,n,once,f,b,no
+66,c,a,continuous,f,a,no
+66,f,d,once,c,c,no
+66,e,c,continuous,b,b,no
+66,f,o,continuous,d,d,no
+66,a,p,once,f,b,no
+66,a,a,continuous,e,a,no
+66,e,q,once,c,c,no
+66,g,s,once,e,a,no

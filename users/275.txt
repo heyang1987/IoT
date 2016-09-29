@@ -1,0 +1,14 @@
+275,c,z,continuous,a,d,no
+275,b,y,once,f,d,no
+275,a,x,continuous,f,c,no
+275,e,zb,continuous,c,b,no
+275,e,n,once,b,a,no
+275,f,a,continuous,c,d,no
+275,c,l,once,f,d,no
+275,d,a,continuous,a,d,no
+275,a,d,once,e,b,no
+275,g,p,continuous,e,b,no
+275,b,k,continuous,f,c,no
+275,d,p,once,b,a,no
+275,g,b,once,d,a,no
+275,f,o,once,d,a,no

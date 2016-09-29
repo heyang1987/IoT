@@ -1,0 +1,14 @@
+96,b,i,once,e,b,no
+96,a,h,continuous,d,a,no
+96,c,d,continuous,f,c,yes
+96,b,w,continuous,f,c,no
+96,e,l,continuous,a,d,yes
+96,d,y,continuous,a,d,yes
+96,d,k,once,f,d,yes
+96,f,a,once,b,a,yes
+96,g,zb,once,d,c,no
+96,g,n,continuous,c,b,no
+96,f,p,continuous,c,b,yes
+96,c,x,once,f,d,no
+96,a,v,once,e,b,no
+96,e,z,once,b,a,no

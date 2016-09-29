@@ -1,0 +1,14 @@
+45,c,t,once,f,a,no
+45,e,v,once,a,b,no
+45,f,i,once,a,b,no
+45,e,h,continuous,f,b,no
+45,b,e,once,d,c,yes
+45,f,w,continuous,b,c,no
+45,g,d,continuous,b,c,no
+45,g,x,once,c,d,no
+45,d,u,continuous,f,b,no
+45,d,g,once,f,a,no
+45,a,o,once,d,c,no
+45,c,f,continuous,e,d,no
+45,a,d,continuous,c,b,no
+45,b,s,continuous,e,d,no
