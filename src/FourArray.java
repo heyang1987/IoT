@@ -14,6 +14,8 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.Remove;
 
+
+
 public class FourArray {
 	
 	private static int classIndex;
@@ -27,7 +29,7 @@ public class FourArray {
 		ArrayList<Integer> array2 = new ArrayList<Integer>();
 		ArrayList<Integer> array3 = new ArrayList<Integer>();
 		ArrayList<Integer> array4 = new ArrayList<Integer>();
-		 
+		
 		// shuffle the list
 		Collections.shuffle(userArray);
 		//System.out.println(userArray.size());

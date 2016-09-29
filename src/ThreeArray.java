@@ -12,12 +12,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-import weka.classifiers.Evaluation;
 import weka.classifiers.meta.FilteredClassifier;
-import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
-import weka.filters.unsupervised.attribute.Remove;
 
 public class ThreeArray {
 	
@@ -39,11 +36,10 @@ public class ThreeArray {
 	public static int finalArray2Size = 0;
 	public static int finalArray3Size = 0;
 
-	public static void main(String[] args) throws Exception {
-		
+	public static void run(ArrayList<Integer> userArray) throws Exception {
 		Random randomNum = new Random();
 		int shuffleTimes = 0;
-		ArrayList<Integer> userArray = getUserIDArray();
+		
 		// create array list object
 		ArrayList<Integer> array1 = new ArrayList<Integer>();
 		ArrayList<Integer> array2 = new ArrayList<Integer>();
@@ -59,7 +55,7 @@ public class ThreeArray {
 		classIndex = test.numAttributes()-1;
 		test.setClassIndex(classIndex);
 		
-		for (int round = 0; round < 10; round++){
+		for (int round = 0; round < 1; round++){
 			System.out.println("Start Shuffling...");
 			shuffleTimes = 0;
 			do{
@@ -88,9 +84,9 @@ public class ThreeArray {
 				data2.setClassIndex(classIndex);
 				data3.setClassIndex(classIndex);
 				
-				fc1 = train(data1);
-				fc2 = train(data2);
-				fc3 = train(data3);
+				fc1 = wekaFunctions.train(data1);
+				fc2 = wekaFunctions.train(data2);
+				fc3 = wekaFunctions.train(data3);
 				//System.out.println("Array1: " + array1);
 				//System.out.println("Array2: " + array2);
 				//System.out.println("Array3: " + array3);
@@ -132,8 +128,8 @@ public class ThreeArray {
 				data1.setClassIndex(classIndex);
 				data2.setClassIndex(classIndex);
 				
-				fc1 = train(data1);
-				fc2 = train(data2);
+				fc1 = wekaFunctions.train(data1);
+				fc2 = wekaFunctions.train(data2);
 				
 				//System.out.println("Array1 size: " + array1.size());
 				//System.out.println("Array2 size: " + array2.size());
@@ -167,8 +163,8 @@ public class ThreeArray {
 				data1.setClassIndex(classIndex);
 				data3.setClassIndex(classIndex);
 				
-				fc1 = train(data1);
-				fc3 = train(data3);
+				fc1 = wekaFunctions.train(data1);
+				fc3 = wekaFunctions.train(data3);
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
 //				System.out.println("Array3 size: " + array3.size());
@@ -201,8 +197,8 @@ public class ThreeArray {
 				data2.setClassIndex(classIndex);
 				data3.setClassIndex(classIndex);
 				
-				fc2 = train(data2);
-				fc3 = train(data3);
+				fc2 = wekaFunctions.train(data2);
+				fc3 = wekaFunctions.train(data3);
 				
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
@@ -215,9 +211,9 @@ public class ThreeArray {
 			
 			for (int expTimes = 0; expTimes < 200; expTimes++){
 				
-				Array1Accuracy = evalCrossValidation(fc1, data1);
-				Array2Accuracy = evalCrossValidation(fc2, data2);
-				Array3Accuracy = evalCrossValidation(fc3, data3);
+				Array1Accuracy = wekaFunctions.evalCrossValidation(fc1, data1);
+				Array2Accuracy = wekaFunctions.evalCrossValidation(fc2, data2);
+				Array3Accuracy = wekaFunctions.evalCrossValidation(fc3, data3);
 				System.out.println("=============================================================================");
 				System.out.println("Iteration: " + expTimes);
 				//System.out.println("fc1:\n " + fc1);
@@ -249,9 +245,9 @@ public class ThreeArray {
 					double accuracy2 = 0;
 					double accuracy3 = 0;
 					
-					accuracy1 = eval(fc1, data1, user);
-					accuracy2 = eval(fc2, data2, user);
-					accuracy3 = eval(fc3, data3, user);
+					accuracy1 = wekaFunctions.eval(fc1, data1, user);
+					accuracy2 = wekaFunctions.eval(fc2, data2, user);
+					accuracy3 = wekaFunctions.eval(fc3, data3, user);
 					//System.out.println(accuracy1);
 					//System.out.println(accuracy2);
 					//System.out.println();
@@ -344,9 +340,9 @@ public class ThreeArray {
 				data2.setClassIndex(classIndex);
 				data3.setClassIndex(classIndex);
 				
-				fc1 = train(data1);
-				fc2 = train(data2);
-				fc3 = train(data3);
+				fc1 = wekaFunctions.train(data1);
+				fc2 = wekaFunctions.train(data2);
+				fc3 = wekaFunctions.train(data3);
 			}
 		}
 		System.out.println("*****************************************************************************");
@@ -359,17 +355,7 @@ public class ThreeArray {
 		System.out.println("*****************************************************************************");
 	}
 	
-	public static ArrayList<Integer> getUserIDArray() throws Exception {
-		ArrayList<Integer> userArray = new ArrayList<Integer>();
-		DataSource source = new DataSource("docs/intel_result6.arff");
-		Instances data = source.getDataSet();
 
-		for (int i = 0; i < data.numInstances(); i= i + 14) {
-			userArray.add((int)data.instance(i).value(0));
-		}
-		//System.out.println(userArray);
-		return userArray;
-	}
 					// APPENDING AND GENERATING .ARFF FILES
 	public static void generateArff(ArrayList<Integer> array, String fileName) throws IOException{
 	    String source = "docs"+File.separator+"intel_arff_header.txt";
@@ -403,40 +389,11 @@ public class ThreeArray {
 	    writer.close();
 	}
 	
-	
-	public static FilteredClassifier train(Instances train) throws Exception
-	{
-		train.setClassIndex(classIndex);
-		
-		Remove rm = new Remove();
-		rm.setAttributeIndices("1");  // REMOVING ID ATTRIBUTE AS THAT WON'T BE INPUT TO THE CLASSIFIER
-		// classifier
-		J48 j48 = new J48();
-		//j48.setUnpruned(true);        // using an unpruned J48
-		// meta-classifier
-		FilteredClassifier fc = new FilteredClassifier();
-		fc.setFilter(rm);
-		fc.setClassifier(j48);
-		// train
-		fc.buildClassifier(train);
-		return fc;
-		
-	}
-	
-	public static double eval(FilteredClassifier fc, Instances train, Instances test)  throws Exception
-	{
-		Evaluation eval = new Evaluation(train);
-		eval.evaluateModel(fc, test);
-		return eval.pctCorrect();
+	public static void main(String[] args) throws Exception {
+		ArrayList<Integer> userArray = getUserID.getUserIDArray();
+		ThreeArray.run(userArray);
 	}
 
-	public static double evalCrossValidation(FilteredClassifier fc, Instances data) throws Exception
-	{
-		Random random = new Random();
-		Evaluation eval = new Evaluation(data);
-		eval.crossValidateModel(fc, data, 10, random);
-		return eval.pctCorrect();
-	}
 	
 
 
