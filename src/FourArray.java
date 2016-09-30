@@ -14,43 +14,43 @@ public class FourArray {
 	
 	private static final int ROUNDS = 1;
 	
-	public static ArrayList<Integer> array1 = new ArrayList<Integer>();
-	public static ArrayList<Integer> array2 = new ArrayList<Integer>();
-	public static ArrayList<Integer> array3 = new ArrayList<Integer>();
-	public static ArrayList<Integer> array4 = new ArrayList<Integer>();
+	public static ArrayList<Integer> array1 = new ArrayList<>();
+	public static ArrayList<Integer> array2 = new ArrayList<>();
+	public static ArrayList<Integer> array3 = new ArrayList<>();
+	public static ArrayList<Integer> array4 = new ArrayList<>();
 	
 	public static int classIndex;
 	public static DataSource source;
-	private DataSource source1;
-	private DataSource source2;
-	private DataSource source3;
-	private DataSource source4;
+	private static DataSource source1;
+	private static DataSource source2;
+	private static DataSource source3;
+	private static DataSource source4;
 	
 	public static Instances test;
-	private Instances data1;
-	private Instances data2;
-	private Instances data3;
-	private Instances data4;
+	private static Instances data1;
+	private static Instances data2;
+	private static Instances data3;
+	private static Instances data4;
 	
 	public static double maxCorrectPercentage = 0;
-	private FilteredClassifier fc1 = new FilteredClassifier();
-	private FilteredClassifier fc2 = new FilteredClassifier();
-	private FilteredClassifier fc3 = new FilteredClassifier();
-	private FilteredClassifier fc4 = new FilteredClassifier();
-	public FilteredClassifier maxFc1 = new FilteredClassifier();
-	public FilteredClassifier maxFc2 = new FilteredClassifier();
-	public FilteredClassifier maxFc3 = new FilteredClassifier();
-	public FilteredClassifier maxFc4 = new FilteredClassifier();
-	public double Array1Accuracy = 0;
-	public double Array2Accuracy = 0;
-	public double Array3Accuracy = 0;
-	public double Array4Accuracy = 0;
-	public int finalArray1Size = 0;
-	public int finalArray2Size = 0;
-	public int finalArray3Size = 0;
-	public int finalArray4Size = 0;
+	public static FilteredClassifier fc1 = new FilteredClassifier();
+	public static FilteredClassifier fc2 = new FilteredClassifier();
+	public static FilteredClassifier fc3 = new FilteredClassifier();
+	public static FilteredClassifier fc4 = new FilteredClassifier();
+	public static FilteredClassifier maxFc1 = new FilteredClassifier();
+	public static FilteredClassifier maxFc2 = new FilteredClassifier();
+	public static FilteredClassifier maxFc3 = new FilteredClassifier();
+	public static FilteredClassifier maxFc4 = new FilteredClassifier();
+	public static double Array1Accuracy = 0;
+	public static double Array2Accuracy = 0;
+	public static double Array3Accuracy = 0;
+	public static double Array4Accuracy = 0;
+	public static int finalArray1Size = 0;
+	public static int finalArray2Size = 0;
+	public static int finalArray3Size = 0;
+	public static int finalArray4Size = 0;
 	
-	public void shuffle(ArrayList<Integer> userArray) throws Exception {
+	public static void shuffle(ArrayList<Integer> userArray) throws Exception {
 		
 		int shuffleTimes = 0;
 		int userArraySize = userArray.size();
@@ -64,10 +64,10 @@ public class FourArray {
 		do{
 			System.out.println("Shuffling array 1, 2, 3, and 4 Time: " + shuffleTimes);
 			Collections.shuffle(userArray);
-			array1 = new ArrayList<Integer>(userArray.subList(0, Math.round(userArraySize/4)));
-			array2 = new ArrayList<Integer>(userArray.subList(Math.round(userArraySize/4), Math.round(userArraySize/2)));
-			array3 = new ArrayList<Integer>(userArray.subList(Math.round(userArraySize/2), Math.round(userArraySize*3/4)));
-			array4 = new ArrayList<Integer>(userArray.subList(Math.round(userArraySize*3/4), userArraySize));
+			array1 = new ArrayList<>(userArray.subList(0, Math.round(userArraySize/4)));
+			array2 = new ArrayList<>(userArray.subList(Math.round(userArraySize/4), Math.round(userArraySize/2)));
+			array3 = new ArrayList<>(userArray.subList(Math.round(userArraySize/2), Math.round(userArraySize*3/4)));
+			array4 = new ArrayList<>(userArray.subList(Math.round(userArraySize*3/4), userArraySize));
 			Collections.sort(array1);
 			Collections.sort(array2);
 			Collections.sort(array3);
@@ -115,7 +115,7 @@ public class FourArray {
 //			System.out.println("Array2: " + array2);
 //			System.out.println("Array3: " + array3);
 //			System.out.println("Array4: " + array4);
-		ArrayList<Integer> combined = new ArrayList<Integer>();
+		ArrayList<Integer> combined = new ArrayList<>();
 		if (fc1.numElements() != 1) {
 			combined.addAll(array2);
 			combined.addAll(array3);
@@ -192,9 +192,9 @@ public class FourArray {
 					"Array3's size: " + data3.numInstances() + "\t" +
 					"Array3's accuracy: " + Array3Accuracy);
 			
-			ArrayList<Integer> array1Backup = new ArrayList<Integer>(array1);  //BACKUPS HAVE BEEN MADE JUST IN CASE WE NEED TO PUT IT BACK IN THE SAME ARRAY
-			ArrayList<Integer> array2Backup = new ArrayList<Integer>(array2);
-			ArrayList<Integer> array3Backup = new ArrayList<Integer>(array3);
+			ArrayList<Integer> array1Backup = new ArrayList<>(array1);  //BACKUPS HAVE BEEN MADE JUST IN CASE WE NEED TO PUT IT BACK IN THE SAME ARRAY
+			ArrayList<Integer> array2Backup = new ArrayList<>(array2);
+			ArrayList<Integer> array3Backup = new ArrayList<>(array3);
 			
 			array1.clear();
 			array2.clear();
@@ -320,13 +320,16 @@ public class FourArray {
 	
 	public static void main(String[] args) throws Exception {
 		ArrayList<Integer> userArray = user.getUserIDArray();
-		FourArray fourArrayInstance = new FourArray();
-		fourArrayInstance.shuffle(userArray);
-		System.out.println(fourArrayInstance.fc1);
-		System.out.println(fourArrayInstance.array1.size());
-		System.out.println(fourArrayInstance.array2.size());
-		System.out.println(fourArrayInstance.array3.size());
-		System.out.println(fourArrayInstance.array4.size());
+		//FourArray fourArrayInstance = new FourArray();
+		shuffle(userArray);
+		System.out.println(fc1);
+                System.out.println(fc2);
+                System.out.println(fc3);
+                System.out.println(fc4);
+		System.out.println(array1.size());
+		System.out.println(array2.size());
+		System.out.println(array3.size());
+		System.out.println(array4.size());
 	}
 
 	

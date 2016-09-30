@@ -20,9 +20,9 @@ public class ThreeArray {
 	
 	private static final int ROUNDS = 1;
 	
-	public static ArrayList<Integer> array1 = new ArrayList<Integer>();
-	public static ArrayList<Integer> array2 = new ArrayList<Integer>();
-	public static ArrayList<Integer> array3 = new ArrayList<Integer>();
+	public static ArrayList<Integer> array1 = new ArrayList<>();
+	public static ArrayList<Integer> array2 = new ArrayList<>();
+	public static ArrayList<Integer> array3 = new ArrayList<>();
 	
 	public static int classIndex;
 	public static DataSource source;
@@ -118,11 +118,11 @@ public class ThreeArray {
 		
 		while ( (fc1.numElements() == 1) && (fc2.numElements() ==1)){
 			System.out.println("Shuffling array 1 and 2 Time: " + (shuffleTimes++));
-			ArrayList<Integer> array = new ArrayList<Integer>(array1);
+			ArrayList<Integer> array = new ArrayList<>(array1);
 			array.addAll(array2);
 			Collections.shuffle(array);
-			array1 = new ArrayList<Integer>(array.subList(0, 66));
-			array2 = new ArrayList<Integer>(array.subList(66, array.size()));
+			array1 = new ArrayList<>(array.subList(0, 66));
+			array2 = new ArrayList<>(array.subList(66, array.size()));
 			Collections.sort(array1);
 			Collections.sort(array2);
 
@@ -153,11 +153,11 @@ public class ThreeArray {
 		}
 		while ( (fc1.numElements() == 1) && (fc3.numElements() ==1)){
 			System.out.println("Shuffling array 1 and 3 Time: " + (shuffleTimes++));
-			ArrayList<Integer> array = new ArrayList<Integer>(array1);
+			ArrayList<Integer> array = new ArrayList<>(array1);
 			array.addAll(array3);
 			Collections.shuffle(array);
-			array1 = new ArrayList<Integer>(array.subList(0, 66));
-			array3 = new ArrayList<Integer>(array.subList(66, array.size()));
+			array1 = new ArrayList<>(array.subList(0, 66));
+			array3 = new ArrayList<>(array.subList(66, array.size()));
 			Collections.sort(array1);
 			Collections.sort(array3);
 
@@ -187,11 +187,11 @@ public class ThreeArray {
 		}
 		while ( (fc3.numElements() == 1) && (fc2.numElements() ==1)){
 			System.out.println("Shuffling array 2 and 3 Time: " + (shuffleTimes++));
-			ArrayList<Integer> array = new ArrayList<Integer>(array2);
+			ArrayList<Integer> array = new ArrayList<>(array2);
 			array.addAll(array3);
 			Collections.shuffle(array);
-			array2 = new ArrayList<Integer>(array.subList(0, 66));
-			array3 = new ArrayList<Integer>(array.subList(66, array.size()));
+			array2 = new ArrayList<>(array.subList(0, 66));
+			array3 = new ArrayList<>(array.subList(66, array.size()));
 			Collections.sort(array2);
 			Collections.sort(array3);
 
@@ -246,9 +246,9 @@ public class ThreeArray {
 					"Array3's size: " + data3.numInstances() + "\t" +
 					"Array3's accuracy: " + Array3Accuracy);
 			
-			ArrayList<Integer> array1Backup = new ArrayList<Integer>(array1);  //BACKUPS HAVE BEEN MADE JUST IN CASE WE NEED TO PUT IT BACK IN THE SAME ARRAY
-			ArrayList<Integer> array2Backup = new ArrayList<Integer>(array2);
-			ArrayList<Integer> array3Backup = new ArrayList<Integer>(array3);
+			ArrayList<Integer> array1Backup = new ArrayList<>(array1);  //BACKUPS HAVE BEEN MADE JUST IN CASE WE NEED TO PUT IT BACK IN THE SAME ARRAY
+			ArrayList<Integer> array2Backup = new ArrayList<>(array2);
+			ArrayList<Integer> array3Backup = new ArrayList<>(array3);
 			
 			array1.clear();
 			array2.clear();
@@ -375,41 +375,41 @@ public class ThreeArray {
 
 					// APPENDING AND GENERATING .ARFF FILES
 	public static void generateArff(ArrayList<Integer> array, String fileName) throws IOException{
-	    String source = "docs"+File.separator+"intel_arff_header.txt";
+	    String sourceFile = "docs"+File.separator+"intel_arff_header.txt";
 	    String dest = "docs"+ File.separator + fileName;
-	    File fin = new File(source);
+	    File fin = new File(sourceFile);
 	    File fout = new File(dest);
 	    
-	    PrintWriter writer = new PrintWriter(fout);
-	    FileInputStream fis = new FileInputStream(fin);
-	    BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-
-	    String aLine = null;
-	    while ((aLine = in.readLine()) != null) {
-	        //Process each line and add output to Dest.txt file
-	    	writer.println(aLine);
-	    }
-	    	    
-	    // close the buffer reader
-	    in.close();
-	    for (int i : array) {
-		    fin = new File("users"+File.separator+i+".txt");
-		    fis = new FileInputStream(fin);
-		    in = new BufferedReader(new InputStreamReader(fis));
-		    while ((aLine = in.readLine()) != null) {
-		        // output to Dest.txt file
-		    	writer.println(aLine);
-		    }
-		    in.close();
-	    }
-	    // close buffer writer
-	    writer.close();
+            try (PrintWriter writer = new PrintWriter(fout)) {
+                FileInputStream fis = new FileInputStream(fin);
+                BufferedReader in = new BufferedReader(new InputStreamReader(fis));
+                String aLine = null;
+                while ((aLine = in.readLine()) != null) {
+                    //Process each line and add output to Dest.txt file
+                    writer.println(aLine);
+                }   // close the buffer reader
+                in.close();
+                for (int i : array) {
+                    fin = new File("users"+File.separator+i+".txt");
+                    fis = new FileInputStream(fin);
+                    in = new BufferedReader(new InputStreamReader(fis));
+                    while ((aLine = in.readLine()) != null) {
+                        // output to Dest.txt file
+                        writer.println(aLine);
+                    }
+                    in.close();
+                }
+                // close buffer writer
+            }
 	}
 	
 	public static void main(String[] args) throws Exception {
 		ArrayList<Integer> userArray = user.getUserIDArray();
 		ThreeArray threeArrayInstance = new ThreeArray();
 		threeArrayInstance.shuffle(userArray);
+                System.out.println(threeArrayInstance.fc1);
+                System.out.println(threeArrayInstance.fc2);
+                System.out.println(threeArrayInstance.fc3);
 		System.out.println(threeArrayInstance.array1.size());
 		System.out.println(threeArrayInstance.array2.size());
 		System.out.println(threeArrayInstance.array3.size());
