@@ -5,6 +5,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Instances;
@@ -166,9 +167,116 @@ public class FourArray {
 			data3 = threeArrayInstance.data3;
 		}
 		System.out.println("4 arrays End Shuffling...");
+                System.out.println("fc1 size: " + fc1.numElements());
+                System.out.println("fc2 size: " + fc2.numElements());
+                System.out.println("fc3 size: " + fc3.numElements());
+                System.out.println("fc4 size: " + fc4.numElements());       
+                System.out.println("Checking Equal Trees...");
+                TimeUnit.SECONDS.sleep(5);
 		
-	}
-	
+                while ( (fc1.numElements() == fc2.numElements()) || (fc1.numElements() == fc3.numElements()) || (fc1.numElements() == fc4.numElements()) || (fc2.numElements() == fc3.numElements()) || (fc2.numElements() == fc4.numElements()) || (fc3.numElements() == fc4.numElements()) ){
+                        if ( fc1.numElements() == fc2.numElements() ) {
+                                array1.addAll(array2);
+                                System.out.println("1 and 2 combind!");
+                                if ( fc3.numElements() != 1){
+                                        TwoArray.shuffle(array3);
+                                        fc2 = TwoArray.fc1;
+                                        fc3 = TwoArray.fc2;
+                                        data2 = TwoArray.data1;
+                                        data3 = TwoArray.data2;
+                                }
+                                else{
+                                        TwoArray.shuffle(array4);
+                                        fc2 = TwoArray.fc1;
+                                        fc4 = TwoArray.fc2;
+                                        data2 = TwoArray.data1;
+                                        data4 = TwoArray.data2;                                
+                                }
+                                
+                        }
+                        else if ( fc1.numElements() == fc3.numElements() ){
+                                array1.addAll(array3);
+                                System.out.println("1 and 3 combind!");
+                                if ( fc2.numElements() != 1){
+                                        TwoArray.shuffle(array2);
+                                        fc2 = TwoArray.fc1;
+                                        fc3 = TwoArray.fc2;
+                                        data2 = TwoArray.data1;
+                                        data3 = TwoArray.data2; 
+                                }
+                                else {
+                                        TwoArray.shuffle(array4);
+                                        fc4 = TwoArray.fc1;
+                                        fc3 = TwoArray.fc2;
+                                        data4 = TwoArray.data1;
+                                        data3 = TwoArray.data2;
+                                }                                        
+                        }
+                        else if ( fc1.numElements() == fc4.numElements() ){
+                                array1.addAll(array4);
+                                System.out.println("1 and 4 combind!");
+                                if ( fc2.numElements() != 1){
+                                        TwoArray.shuffle(array2);
+                                        fc2 = TwoArray.fc1;
+                                        fc4 = TwoArray.fc2;
+                                        data2 = TwoArray.data1;
+                                        data4 = TwoArray.data2; 
+                                }
+                                else {
+                                        TwoArray.shuffle(array3);
+                                        fc4 = TwoArray.fc1;
+                                        fc3 = TwoArray.fc2;
+                                        data4 = TwoArray.data1;
+                                        data3 = TwoArray.data2;
+                                }                                        
+                        }
+                        else if ( fc2.numElements() == fc3.numElements() ){
+                                array2.addAll(array3);
+                                System.out.println("2 and 3 combind!");
+                                if ( fc1.numElements() != 1){
+                                        TwoArray.shuffle(array1);
+                                        fc1 = TwoArray.fc1;
+                                        fc3 = TwoArray.fc2;
+                                        data1 = TwoArray.data1;
+                                        data3 = TwoArray.data2;
+                                }                                        
+                                else{
+                                        TwoArray.shuffle(array4);
+                                        fc4 = TwoArray.fc1;
+                                        fc3 = TwoArray.fc2;
+                                        data4 = TwoArray.data1;
+                                        data3 = TwoArray.data2;
+                                }                                        
+                        }
+                        else if ( fc2.numElements() == fc4.numElements() ){
+                                array2.addAll(array4);
+                                System.out.println("2 and 4 combind!");
+                                if ( fc3.numElements() != 1)
+                                        TwoArray.shuffle(array3);
+                                else
+                                        TwoArray.shuffle(array1);
+                        }
+                        else if ( fc3.numElements() == fc4.numElements() ){
+                                array3.addAll(array4);
+                                System.out.println("3 and 4 combind!");
+                                if ( fc1.numElements() != 1){
+                                        TwoArray.shuffle(array1);
+                                        fc1 = TwoArray.fc1;
+                                        fc4 = TwoArray.fc2;
+                                        data1 = TwoArray.data1;
+                                        data4 = TwoArray.data2;   
+                                }
+                                else {
+                                        TwoArray.shuffle(array2);
+                                        fc2 = TwoArray.fc1;
+                                        fc4 = TwoArray.fc2;
+                                        data2 = TwoArray.data1;
+                                        data4 = TwoArray.data2;
+                                }
+                        }
+                        TimeUnit.SECONDS.sleep(5);
+                }
+	}	
 	
 	public void converge() throws Exception{
 		Random randomNum = new Random();
@@ -177,6 +285,7 @@ public class FourArray {
 			Array1Accuracy = wekaFunctions.evalCrossValidation(fc1, data1);
 			Array2Accuracy = wekaFunctions.evalCrossValidation(fc2, data2);
 			Array3Accuracy = wekaFunctions.evalCrossValidation(fc3, data3);
+                        Array4Accuracy = wekaFunctions.evalCrossValidation(fc4, data4);
 			System.out.println("=============================================================================");
 			System.out.println("Iteration: " + expTimes);
 			//System.out.println("fc1:\n " + fc1);
@@ -191,14 +300,19 @@ public class FourArray {
 			System.out.println("fc3 size: " + fc3.numElements() + "\t" +
 					"Array3's size: " + data3.numInstances() + "\t" +
 					"Array3's accuracy: " + Array3Accuracy);
+			System.out.println("fc4 size: " + fc4.numElements() + "\t" +
+					"Array3's size: " + data4.numInstances() + "\t" +
+					"Array3's accuracy: " + Array4Accuracy);
 			
 			ArrayList<Integer> array1Backup = new ArrayList<>(array1);  //BACKUPS HAVE BEEN MADE JUST IN CASE WE NEED TO PUT IT BACK IN THE SAME ARRAY
 			ArrayList<Integer> array2Backup = new ArrayList<>(array2);
 			ArrayList<Integer> array3Backup = new ArrayList<>(array3);
-			
+			ArrayList<Integer> array4Backup = new ArrayList<>(array4);
+                        
 			array1.clear();
 			array2.clear();
 			array3.clear();
+                        array4.clear();
 				
 			for (int i = 0; i < test.numInstances(); i = i + 14) {
 				int userID = (int)test.instance(i).value(0);
@@ -207,10 +321,12 @@ public class FourArray {
 				double accuracy1 = 0;
 				double accuracy2 = 0;
 				double accuracy3 = 0;
+                                double accuracy4 = 0;
 				
 				accuracy1 = wekaFunctions.eval(fc1, data1, user);
 				accuracy2 = wekaFunctions.eval(fc2, data2, user);
 				accuracy3 = wekaFunctions.eval(fc3, data3, user);
+                                accuracy4 = wekaFunctions.eval(fc4, data4, user);
 				//System.out.println(accuracy1);
 				//System.out.println(accuracy2);
 				//System.out.println();

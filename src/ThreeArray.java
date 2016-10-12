@@ -81,9 +81,9 @@ public class ThreeArray {
 			Collections.sort(array2);
 			Collections.sort(array3);
 			
-			generateArff(array1, "model1.arff");
-			generateArff(array2, "model2.arff");
-			generateArff(array3, "model3.arff");
+			user.generateArff(array1, "model1.arff");
+			user.generateArff(array2, "model2.arff");
+			user.generateArff(array3, "model3.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -129,8 +129,8 @@ public class ThreeArray {
 			//System.out.println("Array1: " + array1);
 			//System.out.println("Array2: " + array2);
 			
-			generateArff(array1, "model1.arff");
-			generateArff(array2, "model2.arff");
+			user.generateArff(array1, "model1.arff");
+			user.generateArff(array2, "model2.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -164,8 +164,8 @@ public class ThreeArray {
 			//System.out.println("Array1: " + array1);
 			//System.out.println("Array3: " + array3);
 			
-			generateArff(array1, "model1.arff");
-			generateArff(array3, "model3.arff");
+			user.generateArff(array1, "model1.arff");
+			user.generateArff(array3, "model3.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source3 = new DataSource("docs/model3.arff");
@@ -198,8 +198,8 @@ public class ThreeArray {
 			//System.out.println("Array2: " + array2);
 			//System.out.println("Array3: " + array3);
 			
-			generateArff(array2, "model2.arff");
-			generateArff(array3, "model3.arff");
+			user.generateArff(array2, "model2.arff");
+			user.generateArff(array3, "model3.arff");
 			
 			source2 = new DataSource("docs/model2.arff");
 			source3 = new DataSource("docs/model3.arff");
@@ -341,9 +341,9 @@ public class ThreeArray {
 				}
 				break;
 			}
-			generateArff(array1, "model1.arff");
-			generateArff(array2, "model2.arff");
-			generateArff(array3, "model3.arff");
+			user.generateArff(array1, "model1.arff");
+			user.generateArff(array2, "model2.arff");
+			user.generateArff(array3, "model3.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -371,37 +371,6 @@ public class ThreeArray {
 //		System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
 //		System.out.println("*****************************************************************************");
 //	}
-	
-
-					// APPENDING AND GENERATING .ARFF FILES
-	public static void generateArff(ArrayList<Integer> array, String fileName) throws IOException{
-	    String sourceFile = "docs"+File.separator+"intel_arff_header.txt";
-	    String dest = "docs"+ File.separator + fileName;
-	    File fin = new File(sourceFile);
-	    File fout = new File(dest);
-	    
-            try (PrintWriter writer = new PrintWriter(fout)) {
-                FileInputStream fis = new FileInputStream(fin);
-                BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-                String aLine = null;
-                while ((aLine = in.readLine()) != null) {
-                    //Process each line and add output to Dest.txt file
-                    writer.println(aLine);
-                }   // close the buffer reader
-                in.close();
-                for (int i : array) {
-                    fin = new File("users"+File.separator+i+".txt");
-                    fis = new FileInputStream(fin);
-                    in = new BufferedReader(new InputStreamReader(fis));
-                    while ((aLine = in.readLine()) != null) {
-                        // output to Dest.txt file
-                        writer.println(aLine);
-                    }
-                    in.close();
-                }
-                // close buffer writer
-            }
-	}
 	
 	public static void main(String[] args) throws Exception {
 		ArrayList<Integer> userArray = user.getUserIDArray();
