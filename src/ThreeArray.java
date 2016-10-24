@@ -18,8 +18,6 @@ import weka.core.converters.ConverterUtils.DataSource;
 
 public class ThreeArray {
 	
-	private static final int ROUNDS = 1;
-	
 	public static ArrayList<Integer> array1 = new ArrayList<Integer>();
 	public static ArrayList<Integer> array2 = new ArrayList<Integer>();
 	public static ArrayList<Integer> array3 = new ArrayList<Integer>();
@@ -362,18 +360,8 @@ public class ThreeArray {
 			fc3 = wekaFunctions.train(data3);
 		}
 	}
-//		System.out.println("*****************************************************************************");
-//		System.out.println("Final Statistics:\n");
-//		System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2+"maxfc3:\n"+maxFc3);
-//		System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
-//		System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
-//		System.out.println("Array3's size: " +  finalArray3Size + "\t" + "accuracy: " + Array3Accuracy);
-//		System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
-//		System.out.println("*****************************************************************************");
-//	}
-	
 
-					// APPENDING AND GENERATING .ARFF FILES
+	// APPENDING AND GENERATING .ARFF FILES
 	public static void generateArff(ArrayList<Integer> array, String fileName) throws IOException{
 	    String source = "docs"+File.separator+"intel_arff_header.txt";
 	    String dest = "docs"+ File.separator + fileName;
@@ -407,12 +395,22 @@ public class ThreeArray {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		ArrayList<Integer> userArray = user.getUserIDArray();
-		ThreeArray threeArrayInstance = new ThreeArray();
-		threeArrayInstance.shuffle(userArray);
-		System.out.println(threeArrayInstance.array1.size());
-		System.out.println(threeArrayInstance.array2.size());
-		System.out.println(threeArrayInstance.array3.size());
+		int ROUNDS = 1000;
+		for (int i=0; i<ROUNDS; i++){
+			ArrayList<Integer> userArray = user.getUserIDArray();
+			ThreeArray threeArrayInstance = new ThreeArray();
+			threeArrayInstance.shuffle(userArray);
+			threeArrayInstance.converge();
+		}
+		System.out.println("*****************************************************************************");
+		System.out.println("Final Statistics:\n");
+		System.out.println("Total Instances: " + (finalArray1Size+finalArray2Size+finalArray3Size));
+		System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2+"maxfc3:\n"+maxFc3);
+		System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
+		System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
+		System.out.println("Array3's size: " +  finalArray3Size + "\t" + "accuracy: " + Array3Accuracy);
+		System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
+		System.out.println("*****************************************************************************");
 	}
 
 	
