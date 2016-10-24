@@ -362,26 +362,23 @@ public class ThreeArray {
 			fc3 = wekaFunctions.train(data3);
 		}
 	}
-//		System.out.println("*****************************************************************************");
-//		System.out.println("Final Statistics:\n");
-//		System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2+"maxfc3:\n"+maxFc3);
-//		System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
-//		System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
-//		System.out.println("Array3's size: " +  finalArray3Size + "\t" + "accuracy: " + Array3Accuracy);
-//		System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
-//		System.out.println("*****************************************************************************");
-//	}
 	
 	public static void main(String[] args) throws Exception {
-		ArrayList<Integer> userArray = user.getUserIDArray();
-		ThreeArray threeArrayInstance = new ThreeArray();
-		threeArrayInstance.shuffle(userArray);
-                System.out.println(threeArrayInstance.fc1);
-                System.out.println(threeArrayInstance.fc2);
-                System.out.println(threeArrayInstance.fc3);
-		System.out.println(threeArrayInstance.array1.size());
-		System.out.println(threeArrayInstance.array2.size());
-		System.out.println(threeArrayInstance.array3.size());
+		for (int i = 0; i < 1; i++){
+			ArrayList<Integer> userArray = user.getUserIDArray();
+			ThreeArray threeArrayInstance = new ThreeArray();
+			threeArrayInstance.shuffle(userArray);
+			threeArrayInstance.converge();
+		}
+		System.out.println("*****************************************************************************");
+		System.out.println("Final Statistics:\n");
+		System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2+"maxfc3:\n"+maxFc3);
+		System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
+		System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
+		System.out.println("Array3's size: " +  finalArray3Size + "\t" + "accuracy: " + Array3Accuracy);
+		System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
+		System.out.println("*****************************************************************************");
+
 	}
 
 	

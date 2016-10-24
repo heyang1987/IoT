@@ -181,8 +181,17 @@ public class TwoArray {
 		}
 			
 	public static void main(String[] args) throws Exception {
-		ArrayList<Integer> userArray = user.getUserIDArray();
-                shuffle(userArray);
-                converge();
+		for (int i = 0; i < 1000; i++){
+			ArrayList<Integer> userArray = user.getUserIDArray();
+			shuffle(userArray);
+			converge();
+		}
+		System.out.println("*****************************************************************************");
+		System.out.println("Final Statistics:\n");
+		System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2);
+		System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
+		System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
+		System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
+		System.out.println("*****************************************************************************");
         }
 }
