@@ -58,8 +58,8 @@ public class TwoArray {
 			Collections.sort(array1);
 			Collections.sort(array2);
 			
-			user.generateArff(array1, "model1.arff");
-			user.generateArff(array2, "model2.arff");
+			arffFunctions.generateArff(array1, "docs/intel_arff_header.txt", "model1.arff");
+			arffFunctions.generateArff(array2, "docs/intel_arff_header.txt", "model2.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -90,7 +90,7 @@ public class TwoArray {
 		System.out.println("2 arrays end Shuffling...");
         }
 	
-                
+
         public static void converge() throws Exception{       
                 for (int expTimes = 0; expTimes < 200; expTimes++){
 			
@@ -163,8 +163,8 @@ public class TwoArray {
 				}
 				break;
 			}
-                        user.generateArff(array1, "model1.arff");
-                        user.generateArff(array2, "model2.arff");
+                        arffFunctions.generateArff(array1, "docs/intel_arff_header.txt", "model1.arff");
+                        arffFunctions.generateArff(array2, "docs/intel_arff_header.txt", "model2.arff");
 
                         source1 = new DataSource("docs/model1.arff");
                         source2 = new DataSource("docs/model2.arff");
@@ -181,8 +181,8 @@ public class TwoArray {
 		}
 			
 	public static void main(String[] args) throws Exception {
-		for (int i = 0; i < 1000; i++){
-			ArrayList<Integer> userArray = user.getUserIDArray();
+		for (int i = 0; i < 1; i++){
+			ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6.arff");
 			shuffle(userArray);
 			converge();
 		}

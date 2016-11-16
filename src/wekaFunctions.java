@@ -13,7 +13,7 @@ public class wekaFunctions {
 		//train.setClassIndex(classIndex);
 		
 		Remove rm = new Remove();
-		rm.setAttributeIndices("1");  // REMOVING ID ATTRIBUTE AS THAT WON'T BE INPUT TO THE CLASSIFIER
+		rm.setAttributeIndices("1,7");  // REMOVING ID ATTRIBUTE AS THAT WON'T BE INPUT TO THE CLASSIFIER
 		// classifier
 		J48 j48 = new J48();
 		//j48.setUnpruned(true);        // using an unpruned J48
@@ -60,4 +60,17 @@ public class wekaFunctions {
 		return eval.pctCorrect();
 		
 	}
+        
+        public static Instances trim(Instances data, int classIndex){
+                //int count = 0;
+                for (int i = data.numInstances()-1; i>=0; i--){
+                        //System.out.println(data.instance(i).stringValue(classIndex-1));
+                        if (!data.instance(i).stringValue(classIndex-1).equals("always")){
+                                //count++;
+                                data.delete(i);
+                        }
+                }
+                //System.out.println("Not ALWALS INSTANCES #: "+count);
+		return data;
+    }
 }

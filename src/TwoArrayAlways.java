@@ -8,9 +8,17 @@ import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
-public class TwoArrayAlways {
-	
-	private static final int ROUNDS = 1;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author yang
+ */
+public class twoArrayAlways {
 	
 	public static ArrayList<Integer> array1 = new ArrayList<>();
 	public static ArrayList<Integer> array2 = new ArrayList<>();
@@ -41,12 +49,7 @@ public class TwoArrayAlways {
 		
 		int shuffleTimes = 0;
 		int userArraySize = userArray.size();
-		source = new DataSource("docs/orig.arff");	
-		test = source.getDataSet();
-		classIndex = test.numAttributes()-2;
-		test.setClassIndex(classIndex);
-		//trim(test);
-		
+                
 		System.out.println("2 arrays Start Shuffling...");
 		shuffleTimes = 0;
                 
@@ -59,8 +62,8 @@ public class TwoArrayAlways {
 			Collections.sort(array1);
 			Collections.sort(array2);
 			
-			user.generateArff(array1, "model1.arff");
-			user.generateArff(array2, "model2.arff");
+			arffFunctions.generateArff(array1, "docs/intel_arff_header_always.txt", "model1.arff");
+			arffFunctions.generateArff(array2, "docs/intel_arff_header_always.txt", "model2.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -70,38 +73,30 @@ public class TwoArrayAlways {
 			
 			data1.setClassIndex(classIndex);
 			data2.setClassIndex(classIndex);
-
-			data1 = trim(data1);
-			data2 = trim(data2);
-			System.out.println("data1's instance #" + data1.numInstances());
-        	System.out.println("data2's instance #" + data2.numInstances());
 			
 			fc1 = wekaFunctions.train(data1);
 			fc2 = wekaFunctions.train(data2);
-                        
-			//System.out.println("Array1: " + array1);
-			//System.out.println("Array2: " + array2);
-			//System.out.println("Array3: " + array3);
-			//System.out.println("Array4: " + array4.size());
-			//System.out.println("Array1 size: " + array1.size());
-			//System.out.println("Array2 size: " + array2.size());
-			//System.out.println("Array3 size: " + array3.size());
-			//System.out.println("Array4 size: " + array4.size());
-                        
+
 			System.out.println("fc1 size: " + fc1.numElements());
 			System.out.println("fc2 size: " + fc2.numElements());
 
 			shuffleTimes++;
-		}while ( (fc1.numElements() == 1) && (fc2.numElements() == 1) );
-
+		}while ( (fc1.numElements() == 1) && (fc2.numElements() == 1) );		
 		System.out.println("2 arrays end Shuffling...");
+                //System.out.println("fc1:\n " + fc1);
+		//System.out.println("fc2:\n " + fc2);
         }
 	
-                
-        public static void converge() throws Exception{   
-        	
-            for (int expTimes = 0; expTimes < 200; expTimes++){
-			
+
+        public static void converge() throws Exception{       
+                int expTimes = 0; 
+                while(true){
+			data1 = wekaFunctions.trim(data1, classIndex);
+                        data2 = wekaFunctions.trim(data2, classIndex);
+//                        System.out.println(">>>>>>>>After trimming<<<<<<<<");
+//                        System.out.println("data1's size: " + data1.numInstances());
+//                        System.out.println("data2's size: " + data2.numInstances());
+                        
 			Array1Accuracy = wekaFunctions.evalCrossValidation(fc1, data1);
 			Array2Accuracy = wekaFunctions.evalCrossValidation(fc2, data2);
                         System.out.println("=============================================================================");
@@ -122,13 +117,17 @@ public class TwoArrayAlways {
 
                         array1.clear();
                         array2.clear();
-	
+                        
+                        int counter = 0;
                         for (int i = 0; i < test.numInstances(); i = i + 14) {
                                 int userID = (int)test.instance(i).value(0);
                                 //System.out.println("#"+(i+14)/14+" ID:"+userID);
                                 Instances user = new Instances(test, i, 14);
-                                // added for always
-                                user = trim(user);
+                                user = wekaFunctions.trim(user, classIndex);
+                                
+//                                if (user.numInstances() != 14){
+//                                        counter = counter + 14 - user.numInstances();
+//                                }
                                 
                                 double accuracy1 = 0;
                                 double accuracy2 = 0;
@@ -155,19 +154,19 @@ public class TwoArrayAlways {
 
                                 //System.out.println("===================");
                         }
-				//System.out.println("EqualAccuracyUser#: " + equaAccurayUser);
+                        //System.out.println("Counter: " + counter);
                         System.out.println("========================================================================================================================================================");
                         //equaAccurayUser = 0;
 			if ( array1.equals(array1Backup) && array2.equals(array2Backup) ){
-				System.out.println("data1's instance #" + data1.numInstances());
-	        	System.out.println("data2's instance #" + data2.numInstances());
-				double accuracy = data1.numInstances()*Array1Accuracy/230600 + data2.numInstances()*Array2Accuracy/230600;
+                                System.out.println("data1's size: " + data1.numInstances());
+                                System.out.println("data2's size: " + data2.numInstances());
+				double cumulatedAccuracy = data1.numInstances()*Array1Accuracy/230600 + data2.numInstances()*Array2Accuracy/230600;
 				System.out.println("*****************************************************************************");
 				System.out.println("Arrays converged within " + expTimes + " iterations");
-				System.out.println("Cumulated Correct Percentage: " +  accuracy);
+				System.out.println("Cumulated Correct Percentage: " +  cumulatedAccuracy);
 				System.out.println("*****************************************************************************");
-				if (accuracy > maxCorrectPercentage){
-					maxCorrectPercentage = accuracy;
+				if (cumulatedAccuracy > maxCorrectPercentage){
+					maxCorrectPercentage = cumulatedAccuracy;
 					maxFc1 = fc1;
 					maxFc2 = fc2;
 					finalArray1Size = data1.numInstances();
@@ -176,8 +175,8 @@ public class TwoArrayAlways {
 				}
 				break;
 			}
-                        user.generateArff(array1, "model1.arff");
-                        user.generateArff(array2, "model2.arff");
+                        arffFunctions.generateArff(array1, "docs/intel_arff_header_always.txt", "model1.arff");
+                        arffFunctions.generateArff(array2, "docs/intel_arff_header_always.txt", "model2.arff");
 
                         source1 = new DataSource("docs/model1.arff");
                         source2 = new DataSource("docs/model2.arff");
@@ -188,35 +187,30 @@ public class TwoArrayAlways {
                         data1.setClassIndex(classIndex);
                         data2.setClassIndex(classIndex);
 
-            			data1 = trim(data1);
-            			data2 = trim(data2);                        
-
                         fc1 = wekaFunctions.train(data1);
                         fc2 = wekaFunctions.train(data2);
-			}
+                        expTimes++;
 		}
-        
-    public static Instances trim(Instances data){
-    	int count = 0;
-    	for (int i = data.numInstances()-1; i>=0; i--){
-    		//System.out.println(data.instance(i).stringValue(classIndex));
-    		if (!data.instance(i).stringValue(classIndex+1).equals("always")){
-    			count++;
-    			data.delete(i);
-    		}
-    	}
-    	//System.out.println("Not ALWALS INSTANCES #: "+count);
-		return data;
-    }
+	}
 			
 	public static void main(String[] args) throws Exception {
-		for (int i =0 ; i < 1; i++){
-			ArrayList<Integer> userArray = user.getUserIDArray();
-            shuffle(userArray);
-            converge();
+                //arffFunctions.splitUser("docs/intel_result6_always.arff");
+                ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6_always.arff");
+                source = new DataSource("docs/intel_result6_always.arff");
+		test = source.getDataSet();
+		classIndex = test.numAttributes()-1;
+		test.setClassIndex(classIndex);
+		for (int i = 0; i < 1000; i++){
+			
+			shuffle(userArray);
+			converge();
 		}
-		System.out.println("Max fc1: \n" + fc1);
-		System.out.println("Max fc2: \n" + fc2);
-		System.out.println("Max Accuracy: " + maxCorrectPercentage);
-    }
+		System.out.println("*****************************************************************************");
+		System.out.println("Final Statistics:\n");
+		System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2);
+		System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
+		System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
+		System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
+		System.out.println("*****************************************************************************");
+        }
 }

@@ -74,10 +74,10 @@ public class FourArray {
 			Collections.sort(array3);
 			Collections.sort(array4);
 			
-			user.generateArff(array1, "model1.arff");
-			user.generateArff(array2, "model2.arff");
-			user.generateArff(array3, "model3.arff");
-			user.generateArff(array4, "model4.arff");
+			arffFunctions.generateArff(array1, "docs/intel_arff_header.txt", "model1.arff");
+			arffFunctions.generateArff(array2, "docs/intel_arff_header.txt", "model2.arff");
+			arffFunctions.generateArff(array3, "docs/intel_arff_header.txt", "model3.arff");
+			arffFunctions.generateArff(array4, "docs/intel_arff_header.txt", "model4.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -403,9 +403,9 @@ public class FourArray {
 				}
 				break;
 			}
-			user.generateArff(array1, "model1.arff");
-			user.generateArff(array2, "model2.arff");
-			user.generateArff(array3, "model3.arff");
+			arffFunctions.generateArff(array1, "docs/intel_arff_header.txt", "model1.arff");
+			arffFunctions.generateArff(array2, "docs/intel_arff_header.txt", "model2.arff");
+			arffFunctions.generateArff(array3, "docs/intel_arff_header.txt", "model3.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -435,7 +435,7 @@ public class FourArray {
 //	}
 	
 	public static void main(String[] args) throws Exception {
-		ArrayList<Integer> userArray = user.getUserIDArray();
+		ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6.arff");
 		//FourArray fourArrayInstance = new FourArray();
 		shuffle(userArray);
 		System.out.println(fc1);
