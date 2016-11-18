@@ -41,7 +41,7 @@ public class TwoArray {
 		
 		int shuffleTimes = 0;
 		int userArraySize = userArray.size();
-		source = new DataSource("docs/intel_result6.arff");	
+		source = new DataSource("docs/intel_result6_always.arff");	
 		test = source.getDataSet();
 		classIndex = test.numAttributes()-1;
 		test.setClassIndex(classIndex);
@@ -58,8 +58,8 @@ public class TwoArray {
 			Collections.sort(array1);
 			Collections.sort(array2);
 			
-			arffFunctions.generateArff(array1, "docs/intel_arff_header.txt", "model1.arff");
-			arffFunctions.generateArff(array2, "docs/intel_arff_header.txt", "model2.arff");
+			arffFunctions.generateArff(array1, "docs/intel_arff_header_always.txt", "model1.arff");
+			arffFunctions.generateArff(array2, "docs/intel_arff_header_always.txt", "model2.arff");
 			
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
@@ -70,8 +70,8 @@ public class TwoArray {
 			data1.setClassIndex(classIndex);
 			data2.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
                         
 			//System.out.println("Array1: " + array1);
 			//System.out.println("Array2: " + array2);
@@ -163,8 +163,8 @@ public class TwoArray {
 				}
 				break;
 			}
-                        arffFunctions.generateArff(array1, "docs/intel_arff_header.txt", "model1.arff");
-                        arffFunctions.generateArff(array2, "docs/intel_arff_header.txt", "model2.arff");
+                        arffFunctions.generateArff(array1, "docs/intel_arff_header_always.txt", "model1.arff");
+                        arffFunctions.generateArff(array2, "docs/intel_arff_header_always.txt", "model2.arff");
 
                         source1 = new DataSource("docs/model1.arff");
                         source2 = new DataSource("docs/model2.arff");
@@ -175,14 +175,14 @@ public class TwoArray {
                         data1.setClassIndex(classIndex);
                         data2.setClassIndex(classIndex);
 
-                        fc1 = wekaFunctions.train(data1);
-                        fc2 = wekaFunctions.train(data2);
+                        fc1 = wekaFunctions.train(data1, classIndex);
+                        fc2 = wekaFunctions.train(data2, classIndex);
 			}
 		}
 			
 	public static void main(String[] args) throws Exception {
 		for (int i = 0; i < 1; i++){
-			ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6.arff");
+			ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6_always.arff");
 			shuffle(userArray);
 			converge();
 		}

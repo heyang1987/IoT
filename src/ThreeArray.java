@@ -91,9 +91,9 @@ public class ThreeArray {
 			data2.setClassIndex(classIndex);
 			data3.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
-			fc3 = wekaFunctions.train(data3);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
 			//System.out.println("Array1: " + array1);
 			//System.out.println("Array2: " + array2);
 			//System.out.println("Array3: " + array3);
@@ -135,8 +135,8 @@ public class ThreeArray {
 			data1.setClassIndex(classIndex);
 			data2.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
 			
 			//System.out.println("Array1 size: " + array1.size());
 			//System.out.println("Array2 size: " + array2.size());
@@ -170,8 +170,8 @@ public class ThreeArray {
 			data1.setClassIndex(classIndex);
 			data3.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc3 = wekaFunctions.train(data3);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
 //				System.out.println("Array3 size: " + array3.size());
@@ -204,8 +204,8 @@ public class ThreeArray {
 			data2.setClassIndex(classIndex);
 			data3.setClassIndex(classIndex);
 			
-			fc2 = wekaFunctions.train(data2);
-			fc3 = wekaFunctions.train(data3);
+			fc2 = wekaFunctions.train(data2, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
 			
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
@@ -351,9 +351,9 @@ public class ThreeArray {
 			data2.setClassIndex(classIndex);
 			data3.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
-			fc3 = wekaFunctions.train(data3);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
 		}
 	}
 	

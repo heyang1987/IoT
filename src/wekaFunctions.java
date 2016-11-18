@@ -8,12 +8,13 @@ import weka.filters.unsupervised.attribute.Remove;
 
 public class wekaFunctions {
 	
-	public static FilteredClassifier train(Instances train) throws Exception
+	public static FilteredClassifier train(Instances train, int classIndex) throws Exception
 	{
-		//train.setClassIndex(classIndex);
+		train.setClassIndex(classIndex);
 		
 		Remove rm = new Remove();
 		rm.setAttributeIndices("1,7");  // REMOVING ID ATTRIBUTE AS THAT WON'T BE INPUT TO THE CLASSIFIER
+		//rm.setAttributeIndices("1");
 		// classifier
 		J48 j48 = new J48();
 		//j48.setUnpruned(true);        // using an unpruned J48

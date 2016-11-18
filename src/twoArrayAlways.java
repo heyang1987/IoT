@@ -64,8 +64,8 @@ public class twoArrayAlways {
 			data1.setClassIndex(classIndex);
 			data2.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
 
 			System.out.println("fc1 size: " + fc1.numElements());
 			System.out.println("fc2 size: " + fc2.numElements());
@@ -177,16 +177,16 @@ public class twoArrayAlways {
                         data1.setClassIndex(classIndex);
                         data2.setClassIndex(classIndex);
 
-                        fc1 = wekaFunctions.train(data1);
-                        fc2 = wekaFunctions.train(data2);
+                        fc1 = wekaFunctions.train(data1, classIndex);
+                        fc2 = wekaFunctions.train(data2, classIndex);
                         expTimes++;
 		}
 	}
 			
 	public static void main(String[] args) throws Exception {
-                //arffFunctions.splitUser("docs/intel_result6_always.arff");
-                ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6_always.arff");
-                source = new DataSource("docs/intel_result6_always.arff");
+		//arffFunctions.splitUser("docs/intel_result6_always.arff");
+		ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6_always.arff");
+		source = new DataSource("docs/intel_result6_always.arff");
 		test = source.getDataSet();
 		classIndex = test.numAttributes()-1;
 		test.setClassIndex(classIndex);

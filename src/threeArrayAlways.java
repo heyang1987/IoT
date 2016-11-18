@@ -67,23 +67,23 @@ public class threeArrayAlways {
                         
 			source1 = new DataSource("docs/model1.arff");
 			source2 = new DataSource("docs/model2.arff");
-                        source3 = new DataSource("docs/model3.arff");
+			source3 = new DataSource("docs/model3.arff");
 			
 			data1 = source1.getDataSet();
 			data2 = source2.getDataSet();
-                        data3 = source3.getDataSet();
+			data3 = source3.getDataSet();
 			
 			data1.setClassIndex(classIndex);
 			data2.setClassIndex(classIndex);
-                        data3.setClassIndex(classIndex);
+			data3.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
-                        fc3 = wekaFunctions.train(data3);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
 
 			System.out.println("fc1 size: " + fc1.numElements());
 			System.out.println("fc2 size: " + fc2.numElements());
-                        System.out.println("fc3 size: " + fc3.numElements());
+			System.out.println("fc3 size: " + fc3.numElements());
 
 			shuffleTimes++;
 		}while ( (fc1.numElements() == 1) && (fc2.numElements() ==1) && (fc3.numElements() ==1) );
@@ -112,8 +112,8 @@ public class threeArrayAlways {
 			data1.setClassIndex(classIndex);
 			data2.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
 			
 			//System.out.println("Array1 size: " + array1.size());
 			//System.out.println("Array2 size: " + array2.size());
@@ -147,8 +147,8 @@ public class threeArrayAlways {
 			data1.setClassIndex(classIndex);
 			data3.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc3 = wekaFunctions.train(data3);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
 //				System.out.println("Array3 size: " + array3.size());
@@ -181,8 +181,8 @@ public class threeArrayAlways {
 			data2.setClassIndex(classIndex);
 			data3.setClassIndex(classIndex);
 			
-			fc2 = wekaFunctions.train(data2);
-			fc3 = wekaFunctions.train(data3);
+			fc2 = wekaFunctions.train(data2, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
 			
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
@@ -341,9 +341,9 @@ public class threeArrayAlways {
 			data2.setClassIndex(classIndex);
 			data3.setClassIndex(classIndex);
 			
-			fc1 = wekaFunctions.train(data1);
-			fc2 = wekaFunctions.train(data2);
-			fc3 = wekaFunctions.train(data3);
+			fc1 = wekaFunctions.train(data1, classIndex);
+			fc2 = wekaFunctions.train(data2, classIndex);
+			fc3 = wekaFunctions.train(data3, classIndex);
                         expTimes++;
 		}
 	}
