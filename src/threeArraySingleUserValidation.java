@@ -50,10 +50,10 @@ public class threeArraySingleUserValidation {
 		int shuffleTimes = 0;
 		int userArraySize = userArray.size();
 		
-		System.out.println("3 arrays Start Shuffling...");
+		//System.out.println("3 arrays Start Shuffling...");
 		shuffleTimes = 0;
 		do{
-			System.out.println("Shuffling array 1, 2, and 3 Time: " + shuffleTimes);
+			//System.out.println("Shuffling array 1, 2, and 3 Time: " + shuffleTimes);
 			Collections.shuffle(userArray);
 			array1 = new ArrayList<>(userArray.subList(0, Math.round(userArraySize/3)));
 			array2 = new ArrayList<>(userArray.subList(Math.round(userArraySize/3), Math.round(userArraySize*2/3)));
@@ -87,18 +87,18 @@ public class threeArraySingleUserValidation {
 			//System.out.println("Array1 size: " + array1.size());
 			//System.out.println("Array2 size: " + array2.size());
 			//System.out.println("Array3 size: " + array3.size());
-			System.out.println("fc1 size: " + fc1.numElements());
-			System.out.println("fc2 size: " + fc2.numElements());
-			System.out.println("fc3 size: " + fc3.numElements());
+			//System.out.println("fc1 size: " + fc1.numElements());
+			//System.out.println("fc2 size: " + fc2.numElements());
+			//System.out.println("fc3 size: " + fc3.numElements());
 			shuffleTimes++;
 		}while ( (fc1.numElements() == 1) && (fc2.numElements() ==1) && (fc3.numElements() ==1) );
 		
-		System.out.println("Array1: " + array1);
-		System.out.println("Array2: " + array2);
-		System.out.println("Array3: " + array3);
+		//System.out.println("Array1: " + array1);
+		//System.out.println("Array2: " + array2);
+		//System.out.println("Array3: " + array3);
 		
 		while ( (fc1.numElements() == 1) && (fc2.numElements() ==1)){
-			System.out.println("Shuffling array 1 and 2 Time: " + (shuffleTimes++));
+			//System.out.println("Shuffling array 1 and 2 Time: " + (shuffleTimes++));
 			ArrayList<Integer> array = new ArrayList<>(array1);
 			array.addAll(array2);
 			Collections.shuffle(array);
@@ -128,12 +128,12 @@ public class threeArraySingleUserValidation {
 			//System.out.println("Array1 size: " + array1.size());
 			//System.out.println("Array2 size: " + array2.size());
 			//System.out.println("Array3 size: " + array3.size());
-			System.out.println("fc1 size: " + fc1.numElements());
-			System.out.println("fc2 size: " + fc2.numElements());
-			System.out.println("fc3 size: " + fc3.numElements());
+			//System.out.println("fc1 size: " + fc1.numElements());
+			//System.out.println("fc2 size: " + fc2.numElements());
+			//System.out.println("fc3 size: " + fc3.numElements());
 		}
 		while ( (fc1.numElements() == 1) && (fc3.numElements() ==1)){
-			System.out.println("Shuffling array 1 and 3 Time: " + (shuffleTimes++));
+			//System.out.println("Shuffling array 1 and 3 Time: " + (shuffleTimes++));
 			ArrayList<Integer> array = new ArrayList<>(array1);
 			array.addAll(array3);
 			Collections.shuffle(array);
@@ -162,12 +162,12 @@ public class threeArraySingleUserValidation {
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
 //				System.out.println("Array3 size: " + array3.size());
-			System.out.println("fc1 size: " + fc1.numElements());
-			System.out.println("fc2 size: " + fc2.numElements());
-			System.out.println("fc3 size: " + fc3.numElements());
+			//System.out.println("fc1 size: " + fc1.numElements());
+			//System.out.println("fc2 size: " + fc2.numElements());
+			//System.out.println("fc3 size: " + fc3.numElements());
 		}
 		while ( (fc3.numElements() == 1) && (fc2.numElements() ==1)){
-			System.out.println("Shuffling array 2 and 3 Time: " + (shuffleTimes++));
+			//System.out.println("Shuffling array 2 and 3 Time: " + (shuffleTimes++));
 			ArrayList<Integer> array = new ArrayList<>(array2);
 			array.addAll(array3);
 			Collections.shuffle(array);
@@ -197,11 +197,11 @@ public class threeArraySingleUserValidation {
 //				System.out.println("Array1 size: " + array1.size());
 //				System.out.println("Array2 size: " + array2.size());
 //				System.out.println("Array3 size: " + array3.size());
-			System.out.println("fc1 size: " + fc1.numElements());
-			System.out.println("fc2 size: " + fc2.numElements());
-			System.out.println("fc3 size: " + fc3.numElements());
+			//System.out.println("fc1 size: " + fc1.numElements());
+			//System.out.println("fc2 size: " + fc2.numElements());
+			//System.out.println("fc3 size: " + fc3.numElements());
 		}		
-		System.out.println("3 arrays End Shuffling...");
+		//System.out.println("3 arrays End Shuffling...");
 	}
 			
 		
@@ -212,20 +212,20 @@ public class threeArraySingleUserValidation {
 			Array1Accuracy = wekaFunctions.evalCrossValidation(fc1, data1);
 			Array2Accuracy = wekaFunctions.evalCrossValidation(fc2, data2);
 			Array3Accuracy = wekaFunctions.evalCrossValidation(fc3, data3);
-			System.out.println("=============================================================================");
-			System.out.println("Iteration: " + expTimes);
+			//System.out.println("=============================================================================");
+			//System.out.println("Iteration: " + expTimes);
 			//System.out.println("fc1:\n " + fc1);
 			//System.out.println("fc2:\n " + fc2);
 			//System.out.println("fc3:\n " + fc3);
-			System.out.println("fc1 size: " + fc1.numElements() + "\t" +
-					"Array1's size: " + data1.numInstances() + "\t" +
-					"Array1's accuracy: " + Array1Accuracy);
-			System.out.println("fc2 size: " + fc2.numElements() + "\t" +
-					"Array2's size: " + data2.numInstances() + "\t" +
-					"Array2's accuracy: " + Array2Accuracy);
-			System.out.println("fc3 size: " + fc3.numElements() + "\t" +
-					"Array3's size: " + data3.numInstances() + "\t" +
-					"Array3's accuracy: " + Array3Accuracy);
+//			System.out.println("fc1 size: " + fc1.numElements() + "\t" +
+//					"Array1's size: " + data1.numInstances() + "\t" +
+//					"Array1's accuracy: " + Array1Accuracy);
+//			System.out.println("fc2 size: " + fc2.numElements() + "\t" +
+//					"Array2's size: " + data2.numInstances() + "\t" +
+//					"Array2's accuracy: " + Array2Accuracy);
+//			System.out.println("fc3 size: " + fc3.numElements() + "\t" +
+//					"Array3's size: " + data3.numInstances() + "\t" +
+//					"Array3's accuracy: " + Array3Accuracy);
 			
 			ArrayList<Integer> array1Backup = new ArrayList<>(array1);  //BACKUPS HAVE BEEN MADE JUST IN CASE WE NEED TO PUT IT BACK IN THE SAME ARRAY
 			ArrayList<Integer> array2Backup = new ArrayList<>(array2);
@@ -306,10 +306,10 @@ public class threeArraySingleUserValidation {
 			//equaAccurayUser = 0;
 			if ( array1.equals(array1Backup) && array2.equals(array2Backup) && array3.equals(array3Backup)){
 				double accuracy = data1.numInstances()*Array1Accuracy/280000 + data2.numInstances()*Array2Accuracy/280000 + data3.numInstances()*Array3Accuracy/280000;
-				System.out.println("*****************************************************************************");
-				System.out.println("Arrays converged within " + expTimes + " iterations");
-				System.out.println("Cumulated Correct Percentage: " +  accuracy);
-				System.out.println("*****************************************************************************");
+				//System.out.println("*****************************************************************************");
+				//System.out.println("Arrays converged within " + expTimes + " iterations");
+				//System.out.println("Cumulated Correct Percentage: " +  accuracy);
+				//System.out.println("*****************************************************************************");
 				if (accuracy > maxCorrectPercentage){
 					maxCorrectPercentage = accuracy;
 					maxFc1 = fc1;
@@ -345,8 +345,7 @@ public class threeArraySingleUserValidation {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		//String filename= "docs/SingleUserValidation.txt";
-		String filename= "MyFile.txt";
+		String filename= "docs/SingleUserValidation.txt";
 	    FileWriter fw = new FileWriter(filename,true);
 		int index = 0;
 		ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6_always.arff");
@@ -354,7 +353,7 @@ public class threeArraySingleUserValidation {
 		test = source.getDataSet();
 		classIndex = test.numAttributes()-1;
 		test.setClassIndex(classIndex);
-		for(index = 0; index < userArray.size(); index++){
+		for(index = 2; index < userArray.size(); index++){
 		//for(index = 0; index < 2; index++){
 			int userID = userArray.get(index);
 			ArrayList<Integer> restUserArray = new ArrayList<Integer>(userArray);
@@ -365,28 +364,29 @@ public class threeArraySingleUserValidation {
 			Instances singleUserInstances = sourceSingleUser.getDataSet();
 			singleUserInstances.setClassIndex(classIndex);
 			restUserArray.remove(index);
-			for (int i = 0; i < 1; i++){
-				
+			for (int i = 0; i < 200; i++){
+				System.out.println("Shuffling times: " + i);
 				threeArraySingleUserValidation threeArrayInstance = new threeArraySingleUserValidation();
 				threeArrayInstance.shuffle(restUserArray);
 				threeArrayInstance.converge();
 			}
-			System.out.println("*****************************************************************************");
-			System.out.println("Final Statistics:\n");
-			System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2+"maxfc3:\n"+maxFc3);
-			System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
-			System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
-			System.out.println("Array3's size: " +  finalArray3Size + "\t" + "accuracy: " + Array3Accuracy);
-			System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
-			System.out.println("*****************************************************************************");
+//			System.out.println("*****************************************************************************");
+//			System.out.println("Final Statistics:\n");
+//			System.out.println("maxfc1:\n"+maxFc1+"maxfc2:\n"+maxFc2+"maxfc3:\n"+maxFc3);
+//			System.out.println("Array1's size: " +  finalArray1Size + "\t" + "accuracy: " + Array1Accuracy);
+//			System.out.println("Array2's size: " +  finalArray2Size + "\t" + "accuracy: " + Array2Accuracy);
+//			System.out.println("Array3's size: " +  finalArray3Size + "\t" + "accuracy: " + Array3Accuracy);
+//			System.out.println("Max Correct Percentage: " +  maxCorrectPercentage);
+//			System.out.println("*****************************************************************************");
 			double acury1 = wekaFunctions.eval(maxFc1, singleUserInstances, singleUserInstances);
 			double acury2 = wekaFunctions.eval(maxFc2, singleUserInstances, singleUserInstances);
 			double acury3 = wekaFunctions.eval(maxFc3, singleUserInstances, singleUserInstances);
+			System.out.println("3 clusters' accuracy for user#: " + userID);
 			System.out.println(acury1);
 			System.out.println(acury2);
 			System.out.println(acury3);
-
-			fw.write(userID + ": " + Math.max(Math.max(acury1, acury2), acury3) + "\n");
+			
+			fw.write(userID + "," + Math.max(Math.max(acury1, acury2), acury3) + "\n");
 		}
 		fw.close();
 	}
