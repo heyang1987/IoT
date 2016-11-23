@@ -345,7 +345,7 @@ public class threeArraySingleUserValidation {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		String filename= "docs/SingleUserValidation.txt";
+		String filename= "docs/2ClusterSingleUserValidation200.txt";
 	    FileWriter fw = new FileWriter(filename,true);
 		int index = 0;
 		ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6_always.arff");
@@ -353,8 +353,7 @@ public class threeArraySingleUserValidation {
 		test = source.getDataSet();
 		classIndex = test.numAttributes()-1;
 		test.setClassIndex(classIndex);
-		for(index = 2; index < userArray.size(); index++){
-		//for(index = 0; index < 2; index++){
+		for(index = 0; index < userArray.size(); index++){
 			int userID = userArray.get(index);
 			ArrayList<Integer> restUserArray = new ArrayList<Integer>(userArray);
 			ArrayList<Integer> singleUser = new ArrayList<Integer>();
