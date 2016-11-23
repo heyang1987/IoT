@@ -19,19 +19,19 @@ public class threeArraySingleUserValidation {
 	
 	public static int classIndex;
 	public static DataSource source;
-	private static DataSource source1;
-	private static DataSource source2;
-	private static DataSource source3;
+	public static DataSource source1;
+	public static DataSource source2;
+	public static DataSource source3;
 	
 	public static Instances test;
-	public Instances data1;
-	public Instances data2;
-	public Instances data3;
+	public static Instances data1;
+	public static Instances data2;
+	public static Instances data3;
 	
 	public static double maxCorrectPercentage = 0;
-	public FilteredClassifier fc1 = new FilteredClassifier();
-	public FilteredClassifier fc2 = new FilteredClassifier();
-	public FilteredClassifier fc3 = new FilteredClassifier();
+	public static FilteredClassifier fc1 = new FilteredClassifier();
+	public static FilteredClassifier fc2 = new FilteredClassifier();
+	public static FilteredClassifier fc3 = new FilteredClassifier();
 
 	public static FilteredClassifier maxFc1 = new FilteredClassifier();
 	public static FilteredClassifier maxFc2 = new FilteredClassifier();
@@ -51,7 +51,6 @@ public class threeArraySingleUserValidation {
 		int userArraySize = userArray.size();
 		
 		//System.out.println("3 arrays Start Shuffling...");
-		shuffleTimes = 0;
 		do{
 			//System.out.println("Shuffling array 1, 2, and 3 Time: " + shuffleTimes);
 			Collections.shuffle(userArray);
@@ -345,7 +344,7 @@ public class threeArraySingleUserValidation {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		String filename= "docs/2ClusterSingleUserValidation200.txt";
+		String filename= "docs/3ClusterSingleUserValidation200.txt";
 	    FileWriter fw = new FileWriter(filename,true);
 		int index = 0;
 		ArrayList<Integer> userArray = arffFunctions.getUserIDArray("docs/intel_result6_always.arff");
